@@ -1,0 +1,685 @@
+1,Delhi NCR,1,India,0,0,,
+2,Kolkata,1,India,0,0,,
+3,Mumbai,1,India,0,0,,
+4,Bangalore,1,India,0,0,,
+5,Pune,1,India,0,0,,
+6,Hyderabad,1,India,0,0,,
+7,Chennai,1,India,0,0,,
+8,Lucknow,1,India,0,0,,
+9,Kochi,1,India,0,0,,
+10,Jaipur,1,India,0,0,,
+11,Ahmedabad,1,India,0,0,,
+12,Chandigarh,1,India,0,0,,
+13,Goa,1,India,0,0,,
+14,Indore,1,India,0,0,,
+15,Gangtok,1,India,0,0,,
+16,Nashik,1,India,0,0,,
+17,Gulmarg,1,India,0,0,,
+18,Ooty,1,India,0,0,,
+19,Shimla,1,India,0,0,,
+20,Ludhiana,1,India,0,0,,
+21,Guwahati,1,India,0,0,,
+22,Amritsar,1,India,0,0,,
+23,Kanpur,1,India,0,0,,
+24,Allahabad,1,India,0,0,,
+25,Aurangabad,1,India,0,0,,
+26,Bhopal,1,India,0,0,,
+27,Ranchi,1,India,0,0,,
+28,Visakhapatnam,1,India,0,0,,
+29,Bhubaneswar,1,India,0,0,,
+30,Coimbatore,1,India,0,0,,
+31,Mangalore,1,India,0,0,,
+32,Vadodara,1,India,0,0,,
+33,Nagpur,1,India,0,0,,
+34,Agra,1,India,0,0,,
+35,Dehradun,1,India,0,0,,
+36,Mysore,1,India,0,0,,
+37,Puducherry,1,India,0,0,,
+38,Surat,1,India,0,0,,
+39,Varanasi,1,India,0,0,,
+40,Patna,1,India,0,0,,
+51,Dubai,214,UAE,0,0,,
+52,Singapore,184,Singapore,0,0,,
+53,Moscow,169,Russia,0,0,,
+54,St Petersburg,169,Russia,0,0,,
+55,HongKong,90,Hong Kong S.A.R.,China,0,0,,
+56,Sharjah,214,UAE,0,0,,
+57,Abu Dhabi,214,UAE,0,0,,
+58,Colombo,191,Sri Lanka,0,0,,
+59,Istanbul,208,Turkey,0,0,,
+60,Ankara,208,Turkey,0,0,,
+61,London,215,United Kingdom,0,142,England and Wales,England and Wales
+62,Doha,166,Qatar,0,0,,
+63,Metro Manila,162,Philippines,0,0,,
+64,Cape Town,189,South Africa,0,0,,
+65,Johannesburg,189,South Africa,0,0,,
+66,Brasília,30,Brasil,0,0,,
+67,São Paulo,30,Brasil,0,0,,
+68,Manchester,215,United Kingdom,0,142,England and Wales,England and Wales
+69,Birmingham,215,United Kingdom,0,142,England and Wales,England and Wales
+70,Auckland,148,New Zealand,0,0,,
+71,Wellington,148,New Zealand,0,0,,
+72,Dummy,17,Bahamas,0,0,,
+73,Rio de Janeiro,30,Brasil,0,0,,
+74,Jakarta,94,Indonesia,0,0,,
+75,Pretoria,189,South Africa,0,0,,
+76,Edinburgh,215,United Kingdom,0,134,Scotland,Sco
+77,Glasgow,215,United Kingdom,0,134,Scotland,Sco
+78,Durban,189,South Africa,0,0,,
+79,Hamilton,148,New Zealand,0,0,,
+80,Salvador,30,Brasil,0,0,,
+81,Porto Alegre,30,Brasil,0,0,,
+82,Greater Lisbon,164,Portugal,0,0,,
+83,Santiago,42,Chile,0,0,,
+84,Prague,54,Czech Republic,0,0,,
+85,Amman,102,Jordan,0,0,,
+86,Beirut,112,Lebanon,0,0,,
+87,Munich,76,Germany,0,0,,
+88,Kuala Lumpur,123,Malaysia,0,0,,
+89,Toronto,ON,37,Canada,0,124,Ontario,ON
+90,Christchurch,148,New Zealand,0,0,,
+91,Dublin,97,Ireland,0,0,,
+92,Ajman,214,UAE,0,0,,
+93,Brno,54,Czech Republic,0,0,,
+95,Nelson,148,New Zealand,0,0,,
+98,Southland,148,New Zealand,0,0,,
+99,NA,NA,,0,0,,
+100,Waikato,148,New Zealand,0,0,,
+103,Marlborough,148,New Zealand,0,0,,
+109,Warsaw,163,Poland,0,0,,
+110,Bogotá,44,Colombia,0,0,,
+111,Bratislava,185,Slovakia,0,0,,
+120,Kawerau,148,New Zealand,0,0,,
+121,Opotiki,148,New Zealand,0,0,,
+122,Rotorua,148,New Zealand,0,0,,
+123,Tauranga,148,New Zealand,0,0,,
+124,Western Bay of Plenty,148,New Zealand,0,0,,
+125,Whakatane,148,New Zealand,0,0,,
+126,Hurunui,148,New Zealand,0,0,,
+127,Kaikoura,148,New Zealand,0,0,,
+128,Mackenzie,148,New Zealand,0,0,,
+129,Selwyn,148,New Zealand,0,0,,
+130,Timaru,148,New Zealand,0,0,,
+131,Waimakariri,148,New Zealand,0,0,,
+132,Waimate,148,New Zealand,0,0,,
+133,Ashburton,148,New Zealand,0,0,,
+134,Banks Peninsula,148,New Zealand,0,0,,
+135,Gisborne,148,New Zealand,0,0,,
+136,Hawkes Bay Central,148,New Zealand,0,0,,
+137,Napier Hastings,148,New Zealand,0,0,,
+138,Wairoa,148,New Zealand,0,0,,
+139,Far North,148,New Zealand,0,0,,
+140,Kaipara,148,New Zealand,0,0,,
+141,Whangarei,148,New Zealand,0,0,,
+142,Waitaki,148,New Zealand,0,0,,
+143,Central Otago,148,New Zealand,0,0,,
+144,Clutha,148,New Zealand,0,0,,
+145,Dunedin,148,New Zealand,0,0,,
+146,Queenstown,148,New Zealand,0,0,,
+147,Gore,148,New Zealand,0,0,,
+148,Invercargill,148,New Zealand,0,0,,
+149,New Plymouth,148,New Zealand,0,0,,
+150,South Taranaki,148,New Zealand,0,0,,
+151,Stratford,148,New Zealand,0,0,,
+152,Hauraki,148,New Zealand,0,0,,
+153,Matamata,148,New Zealand,0,0,,
+154,Otorohanga,148,New Zealand,0,0,,
+155,South Waikato,148,New Zealand,0,0,,
+156,Taupo,148,New Zealand,0,0,,
+157,Coromandel,148,New Zealand,0,0,,
+158,Waipa,148,New Zealand,0,0,,
+159,Waitomo,148,New Zealand,0,0,,
+160,Buller,148,New Zealand,0,0,,
+161,Grey,148,New Zealand,0,0,,
+162,Westland,148,New Zealand,0,0,,
+163,Horowhenua,148,New Zealand,0,0,,
+164,Manawatu,148,New Zealand,0,0,,
+165,Palmerston North,148,New Zealand,0,0,,
+166,Rangitikei,148,New Zealand,0,0,,
+167,Ruapehu,148,New Zealand,0,0,,
+168,Tararua,148,New Zealand,0,0,,
+169,Wanganui,148,New Zealand,0,0,,
+170,Bali,94,Indonesia,0,0,,
+171,Richards Bay,189,South Africa,0,0,,
+172,Garden Route,189,South Africa,0,0,,
+173,Benešov,54,Czech Republic,0,0,,
+174,Beroun,54,Czech Republic,0,0,,
+175,Moravskoslezský kraj,54,Czech Republic,0,0,,
+176,Jihomoravský kraj,54,Czech Republic,0,0,,
+177,Ústecký kraj,54,Czech Republic,0,0,,
+178,Pardubický kraj,54,Czech Republic,0,0,,
+179,České Budějovice,54,Czech Republic,0,0,,
+180,Český Krumlov,54,Czech Republic,0,0,,
+181,Karlovarský kraj,54,Czech Republic,0,0,,
+182,Chomutov,54,Czech Republic,0,0,,
+183,Vysočina,54,Czech Republic,0,0,,
+184,Děčín,54,Czech Republic,0,0,,
+185,Frýdek-Místek,54,Czech Republic,0,0,,
+186,Havířov,54,Czech Republic,0,0,,
+187,Jihočeský kraj,54,Czech Republic,0,0,,
+188,Hradec Králové,54,Czech Republic,0,0,,
+189,Hranice,54,Czech Republic,0,0,,
+190,Jablonec nad Nisou,54,Czech Republic,0,0,,
+191,Karlovy Vary,54,Czech Republic,0,0,,
+192,Kladno,54,Czech Republic,0,0,,
+193,Kolín,54,Czech Republic,0,0,,
+194,Kopřivnice,54,Czech Republic,0,0,,
+195,Středočeský kraj,54,Czech Republic,0,0,,
+196,Zlínský kraj,54,Czech Republic,0,0,,
+197,Liberec,54,Czech Republic,0,0,,
+198,Litoměřice,54,Czech Republic,0,0,,
+199,Mělník,54,Czech Republic,0,0,,
+200,Mladá Boleslav,54,Czech Republic,0,0,,
+201,Most,54,Czech Republic,0,0,,
+202,Královéhradecký kraj,54,Czech Republic,0,0,,
+203,Plzeňský kraj,54,Czech Republic,0,0,,
+204,Nový Jičín,54,Czech Republic,0,0,,
+205,Olomouc,54,Czech Republic,0,0,,
+206,Ostrava,54,Czech Republic,0,0,,
+207,Pardubice,54,Czech Republic,0,0,,
+208,Plzeň,54,Czech Republic,0,0,,
+209,Poděbrady,54,Czech Republic,0,0,,
+210,Přerov,54,Czech Republic,0,0,,
+211,Olomoucký kraj,54,Czech Republic,0,0,,
+212,Teplice,54,Czech Republic,0,0,,
+213,Třinec,54,Czech Republic,0,0,,
+214,Trutnov,54,Czech Republic,0,0,,
+215,Ústí nad Labem,54,Czech Republic,0,0,,
+216,Liberecký kraj,54,Czech Republic,0,0,,
+217,Okres Banská Štiavnica,185,Slovakia,0,0,,
+218,Okres Pezinok,185,Slovakia,0,0,,
+219,Košice,185,Slovakia,0,0,,
+220,Nitra,185,Slovakia,0,0,,
+221,Okres Poprad,185,Slovakia,0,0,,
+222,Okres Malacky,185,Slovakia,0,0,,
+223,Okres Žarnovica,185,Slovakia,0,0,,
+224,Okres Lučenec,185,Slovakia,0,0,,
+225,Okres Komárno,185,Slovakia,0,0,,
+226,Žilina,185,Slovakia,0,0,,
+227,Banská Bystrica,185,Slovakia,0,0,,
+228,Trenčín,185,Slovakia,0,0,,
+229,Okres Trenčín,185,Slovakia,0,0,,
+230,Banskobystrický kraj,185,Slovakia,0,0,,
+231,Prešov,185,Slovakia,0,0,,
+232,Prešovský kraj,185,Slovakia,0,0,,
+233,okres Zvolen,185,Slovakia,0,0,,
+234,Trnavský kraj,185,Slovakia,0,0,,
+235,Trenčiansky kraj,185,Slovakia,0,0,,
+236,okres Senica,185,Slovakia,0,0,,
+237,Bratislavský kraj,185,Slovakia,0,0,,
+238,Okres Senec,185,Slovakia,0,0,,
+239,Trnava,185,Slovakia,0,0,,
+240,Nitriansky kraj,185,Slovakia,0,0,,
+241,Okres Topoľčany,185,Slovakia,0,0,,
+242,Prievidza,185,Slovakia,0,0,,
+243,Okres Žilina,185,Slovakia,0,0,,
+244,Okres Spišská Nová Ves,185,Slovakia,0,0,,
+245,Okres Liptovský Mikuláš,185,Slovakia,0,0,,
+246,Žilinský kraj,185,Slovakia,0,0,,
+247,Okres Martin,185,Slovakia,0,0,,
+248,Okres Nové Zámky,185,Slovakia,0,0,,
+249,Okres Banská Bystrica,185,Slovakia,0,0,,
+250,Okres Vranov nad Topľou,185,Slovakia,0,0,,
+251,Košický kraj,185,Slovakia,0,0,,
+252,Okres Žiar nad Hronom,185,Slovakia,0,0,,
+253,Umm al Quwain,214,UAE,0,0,,
+254,Al Ain,214,UAE,0,0,,
+255,Kraków,163,Poland,0,0,,
+256,Metro Vancouver,BC,37,Canada,0,121,British Columbia,BC
+257,Rome,99,Italy,0,0,,
+258,Milan,99,Italy,0,0,,
+259,Melbourne,VIC,14,Australia,0,132,Victoria,VIC
+260,Sydney,NSW,14,Australia,0,128,New South Wales,NSW
+261,Łódź,163,Poland,0,0,,
+262,Poznań,163,Poland,0,0,,
+263,Wrocław,163,Poland,0,0,,
+264,Lublin,163,Poland,0,0,,
+265,Katowice,163,Poland,0,0,,
+266,Gdańsk,163,Poland,0,0,,
+267,Rzeszów,163,Poland,0,0,,
+268,Szczecin,163,Poland,0,0,,
+269,Bydgoszcz,163,Poland,0,0,,
+270,Toruń,163,Poland,0,0,,
+271,Gdynia,163,Poland,0,0,,
+272,Sopot,163,Poland,0,0,,
+273,Białystok,163,Poland,0,0,,
+274,Częstochowa,163,Poland,0,0,,
+275,Zakopane,163,Poland,0,0,,
+276,Dallas,TX,216,United States,0,111,Texas,TX
+277,Houston,TX,216,United States,0,111,Texas,TX
+278,Austin,TX,216,United States,0,111,Texas,TX
+279,Seattle,WA,216,United States,0,115,Washington State,WA
+280,New York City,NY,216,United States,0,103,New York State,NY
+281,Los Angeles,CA,216,United States,0,73,California,CA
+282,Las Vegas,NV,216,United States,0,102,Nevada,NV
+283,Washington DC,216,United States,0,138,DC,DC
+284,WI,216,United States,1,116,Wisconsin,WI
+285,Detroit,MI,216,United States,0,90,Michigan,MI
+286,Portland,OR,216,United States,0,106,Oregon,OR
+287,Philadelphia,PA,216,United States,0,107,Pennsylvania,PA
+288,Atlanta,GA,216,United States,0,78,Georgia,GA
+289,Boston,MA,216,United States,0,87,Massachusetts,MA
+290,New Orleans,LA,216,United States,0,86,Louisiana,LA
+291,Miami,FL,216,United States,0,77,Florida,FL
+292,Chicago,IL,216,United States,0,82,Illinois,IL
+293,Fujairah,214,UAE,0,0,,
+294,Montreal,QC,37,Canada,0,125,Quebec,QC
+295,Ottawa,ON,37,Canada,0,124,Ontario,ON
+296,Perth,WA,14,Australia,0,133,Western Australia,WA
+297,Adelaide,SA,14,Australia,0,131,South Australia,SA
+298,Brisbane,QLD,14,Australia,0,130,Queensland,QLD
+299,Hanoi,222,Vietnam,0,0,,
+300,Calgary,AB,37,Canada,0,119,Alberta,AB
+301,Phoenix,AZ,216,United States,0,72,Arizona,AZ
+302,San Diego,CA,216,United States,0,73,California,CA
+303,Charlotte,NC,216,United States,0,95,North Carolina,NC
+304,San Antonio,TX,216,United States,0,111,Texas,TX
+305,Denver,CO,216,United States,0,74,Colorado,CO
+306,San Francisco,CA,216,United States,0,73,California,CA
+307,Clarens,189,South Africa,0,0,,
+308,NA,NA,,0,0,,
+309,NA,NA,,0,0,,
+310,Ras al-Khaimah,214,UAE,0,0,,
+311,Porto,164,Portugal,0,0,,
+312,NT,14,Australia,1,129,Northern Territory,NT
+313,Canberra ACT,14,Australia,0,141,ACT,ACT
+314,TAS,14,Australia,0,140,Tasmania,TAS
+315,VIC,14,Australia,1,132,Victoria,VIC
+316,SA,14,Australia,1,131,South Australia,SA
+317,WA,14,Australia,1,133,Western Australia,WA
+318,NSW,14,Australia,1,128,New South Wales,NSW
+319,QLD,14,Australia,1,130,Queensland,QLD
+320,Belfast,215,United Kingdom,0,143,Northern Ireland,Northern Ireland
+321,East Midlands,215,United Kingdom,0,142,England and Wales,England and Wales
+322,East of England,215,United Kingdom,0,142,England and Wales,England and Wales
+323,Liverpool,215,United Kingdom,0,142,England and Wales,England and Wales
+324,North East England,215,United Kingdom,0,142,England and Wales,England and Wales
+325,North West England,215,United Kingdom,0,142,England and Wales,England and Wales
+326,Scotland,215,United Kingdom,1,134,Scotland,Sco
+327,South East England,215,United Kingdom,0,142,England and Wales,England and Wales
+328,South West England,215,United Kingdom,0,142,England and Wales,England and Wales
+329,Wales,215,United Kingdom,0,142,England and Wales,England and Wales
+330,West Midlands,215,United Kingdom,0,142,England and Wales,England and Wales
+331,West Yorkshire,215,United Kingdom,0,142,England and Wales,England and Wales
+332,Yorkshire,215,United Kingdom,0,142,England and Wales,England and Wales
+334,Edmonton,AB,37,Canada,0,119,Alberta,AB
+337,AB,37,Canada,1,119,Alberta,AB
+340,Vancouver Island,BC,37,Canada,1,121,British Columbia,BC
+343,BC,37,Canada,1,121,British Columbia,BC
+346,Winnipeg,MB,37,Canada,0,122,Manitoba,MB
+349,MB,37,Canada,1,122,Manitoba,MB
+352,Atlantic Provinces,NS,37,Canada,1,144,Nova Scotia,NS
+355,ON,37,Canada,1,124,Ontario,ON
+358,Windsor,ON,37,Canada,0,124,Ontario,ON
+361,QC,37,Canada,1,125,Quebec,QC
+364,SK delete,37,Canada,1,126,Saskatchewan,SK
+367,Saskatoon,SK,37,Canada,0,126,Saskatchewan,SK
+370,Regina,SK,37,Canada,0,126,Saskatchewan,SK
+373,TT,37,Canada,1,127,The Territories,TT
+376,Izmir,208,Turkey,0,0,,
+379,Çeşme,208,Turkey,0,0,,
+382,Bursa,208,Turkey,0,0,,
+385,Adana,208,Turkey,0,0,,
+388,Antalya,208,Turkey,0,0,,
+391,Izmit,208,Turkey,0,0,,
+394,Konya,208,Turkey,0,0,,
+397,Gaziantep,208,Turkey,0,0,,
+400,Bodrum,208,Turkey,0,0,,
+403,Eskisehir,208,Turkey,0,0,,
+406,Bozcaada,208,Turkey,0,0,,
+409,Hartbeespoort,189,South Africa,0,0,,
+412,AK,216,United States,1,69,Alaska,AK
+415,Anchorage,AK,216,United States,0,69,Alaska,AK
+418,Fairbanks,AK,216,United States,0,69,Alaska,AK
+421,Birmingham,AL,216,United States,0,70,Alabama,AL
+424,AL,216,United States,1,70,Alabama,AL
+427,Dothan,AL,216,United States,0,70,Alabama,AL
+430,Huntsville,AL,216,United States,0,70,Alabama,AL
+433,Mobile Bay,AL,216,United States,0,70,Alabama,AL
+436,Montgomery,AL,216,United States,0,70,Alabama,AL
+439,Tuscaloosa,AL,216,United States,0,70,Alabama,AL
+442,Little Rock,AR,216,United States,0,71,Arkansas,AR
+445,Fort Smith,AR,216,United States,0,71,Arkansas,AR
+448,Northwest AR,216,United States,0,71,Arkansas,AR
+451,AR,216,United States,1,71,Arkansas,AR
+454,Hot Springs,AR,216,United States,0,71,Arkansas,AR
+457,Prescott,AZ,216,United States,0,72,Arizona,AZ
+460,AZ,216,United States,1,72,Arizona,AZ
+463,Yuma,AZ,216,United States,0,72,Arizona,AZ
+466,Tucson,AZ,216,United States,0,72,Arizona,AZ
+469,Flagstaff,AZ,216,United States,0,72,Arizona,AZ
+472,Ventura County,CA,216,United States,0,73,California,CA
+475,Chico,CA,216,United States,0,73,California,CA
+478,Redding,CA,216,United States,0,73,California,CA
+481,Lancaster,CA,216,United States,0,73,California,CA
+484,Orange County,CA,216,United States,0,73,California,CA
+487,Monterey Bay,CA,216,United States,0,73,California,CA
+490,Temecula,CA,216,United States,0,73,California,CA
+493,Palm Springs,CA,216,United States,0,73,California,CA
+496,Bakersfield,CA,216,United States,0,73,California,CA
+499,Sacramento,CA,216,United States,0,73,California,CA
+502,Southern CA,216,United States,1,73,California,CA
+505,Visalia,CA,216,United States,0,73,California,CA
+508,Stockton,CA,216,United States,0,73,California,CA
+511,Santa Maria,CA,216,United States,0,73,California,CA
+514,Fresno,CA,216,United States,0,73,California,CA
+517,Northern CA,216,United States,1,73,California,CA
+520,Inland Empire,CA,216,United States,0,73,California,CA
+523,Victorville,CA,216,United States,0,73,California,CA
+526,Santa Barbara,CA,216,United States,0,73,California,CA
+529,CO Springs,216,United States,0,74,Colorado,CO
+532,CO,216,United States,1,74,Colorado,CO
+535,Pueblo,CO,216,United States,0,74,Colorado,CO
+538,Grand Junction,CO,216,United States,0,74,Colorado,CO
+541,Northern CO,216,United States,0,74,Colorado,CO
+544,Hartford,CT,216,United States,0,75,Connecticut,CT
+547,CT,216,United States,1,75,Connecticut,CT
+550,New Haven,CT,216,United States,0,75,Connecticut,CT
+553,Fairfield County,CT,216,United States,0,75,Connecticut,CT
+556,Wilmington,DE,216,United States,0,76,Delaware,DE
+559,DE,216,United States,1,76,Delaware,DE
+562,Panama City,FL,216,United States,0,77,Florida,FL
+565,Treasure Coast,FL,216,United States,0,77,Florida,FL
+568,FL,216,United States,1,77,Florida,FL
+571,FL Keys,216,United States,0,77,Florida,FL
+574,Jacksonville,FL,216,United States,0,77,Florida,FL
+577,Melbourne,FL,216,United States,0,77,Florida,FL
+580,Destin,FL,216,United States,0,77,Florida,FL
+583,St Augustine,FL,216,United States,0,77,Florida,FL
+586,Fort Myers,FL,216,United States,0,77,Florida,FL
+589,Ocala,FL,216,United States,0,77,Florida,FL
+592,Gainesville,FL,216,United States,0,77,Florida,FL
+595,Tallahassee,FL,216,United States,0,77,Florida,FL
+598,Daytona Beach,FL,216,United States,0,77,Florida,FL
+601,Orlando,FL,216,United States,0,77,Florida,FL
+604,Tampa Bay,FL,216,United States,0,77,Florida,FL
+607,Pensacola,FL,216,United States,0,77,Florida,FL
+610,Albany,GA,216,United States,0,78,Georgia,GA
+613,Valdosta,GA,216,United States,0,78,Georgia,GA
+616,Gainesville,GA,216,United States,0,78,Georgia,GA
+619,Savannah,GA,216,United States,0,78,Georgia,GA
+622,Columbus,GA,216,United States,0,78,Georgia,GA
+625,Dalton,GA,216,United States,0,78,Georgia,GA
+628,Augusta,GA,216,United States,0,78,Georgia,GA
+631,GA,216,United States,1,78,Georgia,GA
+634,Athens,GA,216,United States,0,78,Georgia,GA
+637,Macon,GA,216,United States,0,78,Georgia,GA
+640,Hawaii,216,United States,0,0,,
+643,Des Moines,IA,216,United States,0,80,Iowa,IA
+646,Davenport,IA,216,United States,0,80,Iowa,IA
+649,Sioux City,IA,216,United States,0,80,Iowa,IA
+652,Cedar Rapids/IA City,216,United States,0,80,Iowa,IA
+655,Waterloo,IA,216,United States,0,80,Iowa,IA
+658,Dubuque,IA,216,United States,0,80,Iowa,IA
+661,IA,216,United States,1,80,Iowa,IA
+664,Boise,ID,216,United States,0,81,Idaho,ID
+667,Pocatello,ID,216,United States,0,81,Idaho,ID
+670,ID,216,United States,1,81,Idaho,ID
+673,Twin Falls,ID,216,United States,0,81,Idaho,ID
+676,"Coeur dAlene,ID",216,United States,0,81,Idaho,ID
+679,ID Falls,216,United States,0,81,Idaho,ID
+682,IL,216,United States,1,82,Illinois,IL
+685,Champaign,IL,216,United States,0,82,Illinois,IL
+688,Rockford,IL,216,United States,0,82,Illinois,IL
+691,Decatur,IL,216,United States,0,82,Illinois,IL
+694,Peoria,IL,216,United States,0,82,Illinois,IL
+697,Bloomington,IL,216,United States,0,82,Illinois,IL
+700,Springfield,IL,216,United States,0,82,Illinois,IL
+703,Fort Wayne,IN,216,United States,0,83,Indiana,IN
+706,IN,216,United States,1,83,Indiana,IN
+709,Terre Haute,IN,216,United States,0,83,Indiana,IN
+712,Muncie,IN,216,United States,0,83,Indiana,IN
+715,Evansville,IN,216,United States,0,83,Indiana,IN
+718,INpolis,216,United States,0,83,Indiana,IN
+721,Bloomington,IN,216,United States,0,83,Indiana,IN
+724,South Bend,IN,216,United States,0,83,Indiana,IN
+727,Lafayette,IN,216,United States,0,83,Indiana,IN
+730,Wichita,KS,216,United States,0,84,Kansas,KS
+733,Topeka,KS,216,United States,0,84,Kansas,KS
+736,KS,216,United States,1,84,Kansas,KS
+739,KY,216,United States,1,85,Kentucky,KY
+742,Lexington,KY,216,United States,0,85,Kentucky,KY
+745,Louisville,KY,216,United States,0,85,Kentucky,KY
+748,Paducah,KY,216,United States,0,85,Kentucky,KY
+751,Bowling Green,KY,216,United States,0,85,Kentucky,KY
+754,Monroe,LA,216,United States,0,86,Louisiana,LA
+757,Baton Rouge,LA,216,United States,0,86,Louisiana,LA
+760,LA,216,United States,1,86,Louisiana,LA
+763,Lake Charles,LA,216,United States,0,86,Louisiana,LA
+766,Shreveport,LA,216,United States,0,86,Louisiana,LA
+769,Houma,LA,216,United States,0,86,Louisiana,LA
+772,Lafayette,LA,216,United States,0,86,Louisiana,LA
+775,Cape Cod,MA,216,United States,0,87,Massachusetts,MA
+778,MA,216,United States,1,87,Massachusetts,MA
+781,New Bedford,MA,216,United States,0,87,Massachusetts,MA
+784,Ocean City,MD,216,United States,0,88,Maryland,MD
+787,Baltimore,MD,216,United States,0,88,Maryland,MD
+790,MD,216,United States,1,88,Maryland,MD
+793,Portland,ME,216,United States,0,89,Maine,ME
+796,ME,216,United States,1,89,Maine,ME
+799,Muskegon,MI,216,United States,0,90,Michigan,MI
+802,Kalamazoo,MI,216,United States,0,90,Michigan,MI
+805,MI,216,United States,1,90,Michigan,MI
+808,Jackson,MI,216,United States,0,90,Michigan,MI
+811,Traverse City,MI,216,United States,0,90,Michigan,MI
+814,Lansing,MI,216,United States,0,90,Michigan,MI
+817,Grand Rapids,MI,216,United States,0,90,Michigan,MI
+820,Flint,MI,216,United States,0,90,Michigan,MI
+823,Saginaw,MI,216,United States,0,90,Michigan,MI
+826,Twin Cities,MN,216,United States,0,91,Minnesota,MN
+829,Rochester,MN,216,United States,0,91,Minnesota,MN
+832,Duluth,MN,216,United States,0,91,Minnesota,MN
+835,MN,216,United States,1,91,Minnesota,MN
+838,St Joseph,MO,216,United States,0,92,Missouri,MO
+841,Branson,MO,216,United States,0,92,Missouri,MO
+844,St. Louis,MO,216,United States,0,92,Missouri,MO
+847,MO,216,United States,1,92,Missouri,MO
+850,Springfield,MO,216,United States,0,92,Missouri,MO
+853,Joplin,MO,216,United States,0,92,Missouri,MO
+856,Kansas City,MO,216,United States,0,92,Missouri,MO
+859,Columbia,MO,216,United States,0,92,Missouri,MO
+862,Jackson,MS,216,United States,0,93,Mississippi,MS
+865,Gulfport,MS,216,United States,0,93,Mississippi,MS
+868,MS,216,United States,1,93,Mississippi,MS
+871,Hattiesburg,MS,216,United States,0,93,Mississippi,MS
+874,MT,216,United States,1,94,Montana,MT
+877,Great Falls,MT,216,United States,0,94,Montana,MT
+880,Billings,MT,216,United States,0,94,Montana,MT
+883,Bozeman,MT,216,United States,0,94,Montana,MT
+886,Missoula,MT,216,United States,0,94,Montana,MT
+889,Helena,MT,216,United States,0,94,Montana,MT
+892,Butte,MT,216,United States,0,94,Montana,MT
+895,Kalispell,MT,216,United States,0,94,Montana,MT
+898,Research Triangle,NC,216,United States,0,95,North Carolina,NC
+901,Asheville,NC,216,United States,0,95,North Carolina,NC
+904,Piedmont Triad,NC,216,United States,0,95,North Carolina,NC
+907,Fayetteville,NC,216,United States,0,95,North Carolina,NC
+910,Hickory,NC,216,United States,0,95,North Carolina,NC
+913,Jacksonville,NC,216,United States,0,95,North Carolina,NC
+916,Wilmington,NC,216,United States,0,95,North Carolina,NC
+919,NC,216,United States,1,95,North Carolina,NC
+922,Greenville,NC,216,United States,0,95,North Carolina,NC
+925,Grand Forks,ND,216,United States,0,96,North Dakota,ND
+928,ND,216,United States,1,96,North Dakota,ND
+931,Fargo,ND,216,United States,0,96,North Dakota,ND
+934,Minot,ND,216,United States,0,96,North Dakota,ND
+937,Bismarck,ND,216,United States,0,96,North Dakota,ND
+940,NE,216,United States,1,97,Nebraska,NE
+943,Lincoln,NE,216,United States,0,97,Nebraska,NE
+946,Omaha,NE,216,United States,0,97,Nebraska,NE
+949,Manchester,NH,216,United States,0,98,New Hampshire,NH
+952,NH,216,United States,1,98,New Hampshire,NH
+955,NJ,216,United States,1,100,New Jersey,NJ
+958,South Jersey delete,NJ,216,United States,0,100,New Jersey,NJ
+961,Las Cruces,NM,216,United States,0,101,New Mexico,NM
+964 ,Albuquerque,NM ,216 ,United States ,0 ,101 ,New Mexico ,NM
+967 ,NM ,216 ,United States ,1 ,101 ,New Mexico ,NM
+970 ,Santa Fe,NM ,216 ,United States ,0 ,101 ,New Mexico ,NM
+973 ,NV ,216 ,United States ,1 ,102 ,Nevada ,NV
+976 ,Reno,NV ,216 ,United States ,0 ,102 ,Nevada ,NV
+979 ,Middletown,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+982 ,Binghamton,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+985 ,NY ,216 ,United States ,1 ,103 ,New York State ,NY
+988 ,Syracuse,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+991 ,Finger Lakes Region,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+994 ,Westchester County,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+997 ,Albany,New York,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+1000 ,Long Island,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+1003 ,Rochester,New York,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+1006 ,Hudson Valley,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+1009 ,Utica,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+1012 ,Buffalo,NY ,216 ,United States ,0 ,103 ,New York State ,NY
+1015 ,Dayton,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1018 ,Youngstown,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1021 ,Columbus,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1024 ,Mansfield,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1027 ,Canton,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1030 ,Cincinnati,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1033 ,Cleveland,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1036 ,OH ,216 ,United States ,1 ,104 ,Ohio ,OH
+1039 ,Lima,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1042 ,Toledo,OH ,216 ,United States ,0 ,104 ,Ohio ,OH
+1045 ,Tulsa,OK ,216 ,United States ,0 ,105 ,Oklahoma ,OK
+1048 ,OK ,216 ,United States ,1 ,105 ,Oklahoma ,OK
+1051 ,OK City ,216 ,United States ,0 ,105 ,Oklahoma ,OK
+1054 ,Lawton,OK ,216 ,United States ,0 ,105 ,Oklahoma ,OK
+1057 ,Medford,OR ,216 ,United States ,0 ,106 ,Oregon ,OR
+1060 ,Salem,OR ,216 ,United States ,0 ,106 ,Oregon ,OR
+1063 ,Eugene,OR ,216 ,United States ,0 ,106 ,Oregon ,OR
+1066 ,Bend,OR ,216 ,United States ,0 ,106 ,Oregon ,OR
+1069 ,OR ,216 ,United States ,1 ,106 ,Oregon ,OR
+1072 ,Johnstown,PA ,216 ,United States ,0 ,107 ,Pennsylvania ,PA
+1075 ,Scranton,PA ,216 ,United States ,0 ,107 ,Pennsylvania ,PA
+1078 ,Harrisburg,PA ,216 ,United States ,0 ,107 ,Pennsylvania ,PA
+1081 ,Pittsburgh,PA ,216 ,United States ,0 ,107 ,Pennsylvania ,PA
+1084 ,Allentown,PA ,216 ,United States ,0 ,107 ,Pennsylvania ,PA
+1087 ,PA ,216 ,United States ,1 ,107 ,Pennsylvania ,PA
+1090 ,Erie,PA ,216 ,United States ,0 ,107 ,Pennsylvania ,PA
+1093 ,Lancaster,PA ,216 ,United States ,0 ,107 ,Pennsylvania ,PA
+1096 ,Providence,RI ,216 ,United States ,0 ,137 ,Rhode Island ,RI
+1099 ,Hilton Head Island,SC ,216 ,United States ,0 ,108 ,South Carolina ,SC
+1102 ,SC ,216 ,United States ,1 ,108 ,South Carolina ,SC
+1105 ,Charleston,SC ,216 ,United States ,0 ,108 ,South Carolina ,SC
+1108 ,Florence,SC ,216 ,United States ,0 ,108 ,South Carolina ,SC
+1111 ,Greenville,SC ,216 ,United States ,0 ,108 ,South Carolina ,SC
+1114 ,Columbia,SC ,216 ,United States ,0 ,108 ,South Carolina ,SC
+1117 ,Rock Hill,SC ,216 ,United States ,0 ,108 ,South Carolina ,SC
+1120 ,Myrtle Beach,SC ,216 ,United States ,0 ,108 ,South Carolina ,SC
+1123 ,SD ,216 ,United States ,1 ,109 ,South Dakota ,SD
+1126 ,Sioux Falls,SD ,216 ,United States ,0 ,109 ,South Dakota ,SD
+1129 ,Rapid City,SD ,216 ,United States ,0 ,109 ,South Dakota ,SD
+1132 ,TN ,216 ,United States ,1 ,110 ,Tennessee ,TN
+1135 ,Johnson City,TN ,216 ,United States ,0 ,110 ,Tennessee ,TN
+1138 ,Nashville,TN ,216 ,United States ,0 ,110 ,Tennessee ,TN
+1141 ,Chattanooga,TN ,216 ,United States ,0 ,110 ,Tennessee ,TN
+1144 ,Memphis,TN ,216 ,United States ,0 ,110 ,Tennessee ,TN
+1147 ,Jackson,TN ,216 ,United States ,0 ,110 ,Tennessee ,TN
+1150 ,Clarksville,TN ,216 ,United States ,0 ,110 ,Tennessee ,TN
+1153 ,Knoxville,TN ,216 ,United States ,0 ,110 ,Tennessee ,TN
+1156 ,Brownsville,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1159 ,Odessa,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1162 ,Waco,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1165 ,San Angelo,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1168 ,El Paso,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1171 ,Beaumont,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1174 ,Corpus Christi,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1177 ,Laredo,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1180 ,Abilene,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1183 ,Wichita Falls,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1186 ,Amarillo,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1189 ,Lubbock,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1192 ,Tyler,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1195 ,College Station,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1198 ,Longview,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1201 ,Killeen,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1204 ,McAllen,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1207 ,TX ,216 ,United States ,1 ,111 ,Texas ,TX
+1210 ,Victoria,TX ,216 ,United States ,0 ,111 ,Texas ,TX
+1213 ,Salt Lake City,UT ,216 ,United States ,0 ,112 ,Utah ,UT
+1216 ,UT ,216 ,United States ,1 ,112 ,Utah ,UT
+1219 ,Richmond,VA ,216 ,United States ,0 ,113 ,Virginia ,VA
+1222 ,Lynchburg,VA ,216 ,United States ,0 ,113 ,Virginia ,VA
+1225 ,Roanoke,VA ,216 ,United States ,0 ,113 ,Virginia ,VA
+1228 ,Hampton Roads,VA ,216 ,United States ,0 ,113 ,Virginia ,VA
+1231 ,VA ,216 ,United States ,1 ,113 ,Virginia ,VA
+1234 ,Charlottesville,VA ,216 ,United States ,0 ,113 ,Virginia ,VA
+1237 ,VT ,216 ,United States ,1 ,114 ,Vermont ,VT
+1240 ,Spokane,WA ,216 ,United States ,0 ,115 ,Washington State ,WA
+1243 ,WA ,216 ,United States ,1 ,115 ,Washington State ,WA
+1246 ,Yakima,WA ,216 ,United States ,0 ,115 ,Washington State ,WA
+1249 ,Olympia,WA ,216 ,United States ,0 ,115 ,Washington State ,WA
+1252 ,Bellingham,WA ,216 ,United States ,0 ,115 ,Washington State ,WA
+1255 ,La Crosse,WI ,216 ,United States ,0 ,116 ,Wisconsin ,WI
+1258 ,Oshkosh,WI ,216 ,United States ,0 ,116 ,Wisconsin ,WI
+1261 ,Eau Claire,WI ,216 ,United States ,0 ,116 ,Wisconsin ,WI
+1264 ,Madison,WI ,216 ,United States ,0 ,116 ,Wisconsin ,WI
+1267 ,Milwaukee,WI ,216 ,United States ,0 ,116 ,Wisconsin ,WI
+1270 ,Sheboygan,WI ,216 ,United States ,0 ,116 ,Wisconsin ,WI
+1273 ,Green Bay,WI ,216 ,United States ,0 ,116 ,Wisconsin ,WI
+1276 ,Charleston,WV ,216 ,United States ,0 ,117 ,West Virginia ,WV
+1279 ,Huntington,WV ,216 ,United States ,0 ,117 ,West Virginia ,WV
+1282 ,WV ,216 ,United States ,1 ,117 ,West Virginia ,WV
+1285 ,Morgantown,WV ,216 ,United States ,0 ,117 ,West Virginia ,WV
+1288 ,WY ,216 ,United States ,1 ,118 ,Wyoming ,WY
+1291 ,Cheyenne,WY ,216 ,United States ,0 ,118 ,Wyoming ,WY
+1294 ,Casper,WY ,216 ,United States ,0 ,118 ,Wyoming ,WY
+1295 ,Palmerston City,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1296 ,Coconut Grove,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1297 ,The Gardens,Darwin,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1298 ,Parap,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1299 ,Winnellie ,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1300 ,Palmerston,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1301 ,Millner,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1302 ,Jabiru,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1303 ,Jingili,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1304 ,Darwin International Airport,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1305 ,Marrara,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1306 ,Rapid Creek,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1307 ,Batchelor,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1308 ,Berry Springs,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1309 ,Casuarina ,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1310 ,Anula,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1311 ,Adelaide River,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1312 ,Karama,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1313 ,Larrakeyah,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1314 ,Leanyer ,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1315 ,The Gardens,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1316 ,Stuart Park,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1317 ,Yarrawonga,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1318 ,Berrimah,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1319 ,Durack,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1320 ,Nightcliff,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1321 ,Fannie Bay,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1322 ,East Point NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1323 ,Darwin,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1324 ,Mindil Beach,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1325 ,Coolalinga,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1326 ,Daly River,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1327 ,Katherine,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1328 ,Pine Creek,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1329 ,Tennant Creek,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1330 ,Alice Springs,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1331 ,Desert Springs,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1332 ,Yulara,NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1333 ,East Side NT ,14 ,Australia ,0 ,129 ,Northern Territory ,NT
+1334 ,Lucknow,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1335 ,Bunyip,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1336 ,Korumburra,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1337 ,Stratford,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1338 ,Erica,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1339 ,Cann River,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1340 ,Archies Creek,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1341 ,Bass,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1342 ,Inverloch,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1343 ,Loch,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1344 ,Kardella South,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1345 ,Phillip Island,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1346 ,Sale,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1347 ,Mallacoota,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1348 ,Willung South,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1349 ,Newborough,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1350 ,Metung,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1351 ,Foster,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1352 ,Lake Tyers Beach,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1353 ,Paynesville,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC
+1354 ,Toora,VIC ,14 ,Australia ,0 ,132 ,Victoria ,VIC

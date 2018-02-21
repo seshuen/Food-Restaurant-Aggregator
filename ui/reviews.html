@@ -1,0 +1,2502 @@
+
+<!DOCTYPE html>
+<html  lang="en"  prefix="og: http://ogp.me/ns#" >
+<head>
+    <meta charset="utf-8" />
+    <meta content="origin" name="referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+    <link rel="preconnect" href="//b.zmtcdn.com" />
+
+    <link rel="alternate" hreflang="en" href="https://www.zomato.com/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="tr" href="https://www.zomato.com/tr/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="es" href="https://www.zomato.com/es/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="pt" href="https://www.zomato.com/pt/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="id" href="https://www.zomato.com/id/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="cs" href="https://www.zomato.com/cs/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="sk" href="https://www.zomato.com/sk/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="pl" href="https://www.zomato.com/pl/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="it" href="https://www.zomato.com/it/mumbai/zaffran-lower-parel/reviews" />
+    <link rel="alternate" hreflang="vi" href="https://www.zomato.com/vi/mumbai/zaffran-lower-parel/reviews" />
+
+    <title>Zaffran Reviews, User Reviews for Zaffran, Lower Parel, Mumbai - Zomato</title>
+    <meta name="description" content="User Reviews for Zaffran, Lower Parel, Mumbai; Zaffran Reviews; Zaffran, Mumbai restaurant reviews on Zomato" />
+            <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, initial-scale=1">
+
+
+        <meta name="robots" content="NOODP,NOYDIR" />
+
+
+        <link rel="icon" type="image/png" href="https://b.zmtcdn.com/images/logo/zomato_favicon5.png?output-format=webp" />
+    <link rel="apple-touch-icon-precomposed" href="https://b.zmtcdn.com/images/logo/zomato_favicon5.png?output-format=webp" />
+
+
+
+        <meta name='yandex-verification' content='4e4b1f7d1bc34e52' />
+    <meta name="p:domain_verify" content="ff64c9ade03e7fb418904bb99079a071"/>
+
+            <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@zomato">
+        <meta name="twitter:creator" content="@zomato">
+        <meta name="twitter:title" content="Zaffran - Lower Parel, Mumbai">
+        <meta name="twitter:description" content="Serves North Indian, Mughlai, Biryani, Seafood. Cost  ₹1,300 for two people (approx.)&amp;nbsp;Exclusive of applicable taxes and charges, if any">
+        <meta name="twitter:image" content="https://b.zmtcdn.com/data/pictures/chains/1/38911/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?output-format=webp">
+        <meta name="twitter:data1" content="Rated 3.6/5">
+        <meta name="twitter:label1" content="Based on 1043 votes">
+        <meta name="twitter:data2" content="617 Reviews">
+        <meta name="twitter:label2" content="View all reviews">
+        <meta name="twitter:app:url:iphone" content="zomato://r/44008"/>
+        <meta name="twitter:app:url:ipad" content="zomato://r/44008"/>
+        <meta name="twitter:app:url:googleplay" content="http://zoma.to/r/44008"/>
+
+    <meta name="twitter:app:name:iphone" content="Zomato"/>
+    <meta name="twitter:app:id:iphone" content="434613896" />
+    <meta name="twitter:app:name:ipad" content="Zomato" />
+    <meta name="twitter:app:id:ipad" content="434613896" />
+    <meta name="twitter:app:id:googleplay" content="com.application.zomato" />
+    <meta name="twitter:app:name:googleplay" content="Zomato" />
+    <meta name="twitter:app:country" content="in">
+        <meta property="fb:app_id" content="288523881080"/>
+            <meta property="og:title" content="Zaffran - Mumbai"/>
+        <meta property="og:type" content="zomatocom:restaurant"/>
+        <meta property="og:url" content="https://www.zomato.com/mumbai/zaffran-lower-parel?ztype=restaurant&zid=44008&zsource=facebook&fbrefresh=44008"/>
+        <meta property="og:image" content="https://b.zmtcdn.com/data/pictures/chains/1/38911/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?output-format=webp"/>
+        <meta property="og:image:url" content="https://b.zmtcdn.com/data/pictures/chains/1/38911/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?output-format=webp"/>
+
+                    <meta property="og:image:height" content="975"/>
+            <meta property="og:image:width" content="1300"/>
+
+        <meta property="og:description" content="Rated 3.6/5. Located in Lower Parel, Mumbai. Serves North Indian, Mughlai, Biryani, Seafood. Cost  ₹1,300 for two people (approx.)&amp;nbsp;Exclusive of applicable taxes and charges, if any "/>
+        <meta property="og:site_name" content="Zomato"/>
+        <meta property="zomatocom:location:latitude" content="19.0010973000"/>
+        <meta property="zomatocom:location:longitude" content="72.8296612000"/>
+        <meta property="place:location:latitude" content="19.0010973000"/>
+        <meta property="place:location:longitude" content="72.8296612000"/>
+                        <meta property="zomatocom:average_rating" content="Rating: 3.6"/>
+                <meta property="zomatocom:user_reviews" content="612 Reviews"/>
+        <meta property="zomatocom:caption_one" content="Rated 3.6/5. Located in Lower Parel, Mumbai. Serves North Indian, Mughlai, Biryani, Seafood. Cost  ₹1,300 for two people (approx.)&amp;nbsp;Exclusive of applicable taxes and charges, if any">
+        <meta property="al:web:should_fallback" content="false" />
+        <meta property="al:ios:url" content="zomato://r/44008" />
+        <meta property="al:ios:app_store_id" content="434613896" />
+        <meta property="al:ios:app_name" content="Zomato" />
+        <meta property="al:android:url" content="zomato://r/44008" />
+        <meta property="al:android:app_name" content="Zomato" />
+        <meta property="al:android:package" content="com.application.zomato" />
+        <meta property="al:windows_phone:url" content="zomato://r/44008" />
+        <meta property="al:windows_phone:app_id" content="a00f4816-19b0-4bd8-a554-8f0172151cb3" />
+        <meta property="al:windows_phone:app_name" content="Zomato" />
+        <link href="android-app://com.application.zomato/http/zoma.to/r/44008" rel="alternate">
+
+
+    <script>
+    dataLayer = [{}];
+    var stdeviceProperties = {"user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/63.0.3239.84 Safari\/537.36"};
+    dataLayer.push(stdeviceProperties);
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKPZQ6');
+</script>
+<!-- End Google Tag Manager -->
+
+
+    <script type="text/javascript">
+        var zomato=zomato||{};zomato.FontLoader={logLoaded:function(o){},isSupported:function(){return"function"==typeof FontFace&&"object"==typeof document.fonts&&"object"==typeof document.fonts.ready},triggerLoad:function(){var o=new FontFace("Source Sans Pro","local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2) format('woff2')",{style:"normal",unicodeRange:"U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000",weight:"400"});document.fonts.add(o),o.loaded.then(this.logLoaded),o.load();var t=new FontFace("Source Sans Pro","local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2')",{style:"normal",unicodeRange:"U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000",weight:"700"});document.fonts.add(t),t.loaded.then(this.logLoaded),t.load();var e=new FontFace("zombatsregular",'url(https://b.zmtcdn.com/stylesheets/fonts/zombatsregular-webfont-web-45g75h96d756.woff2) format("woff2"), url(https://b.zmtcdn.com/stylesheets/fonts/zombatsregular-webfont-web-45g75h96d756.woff) format("woff")');document.fonts.add(e),e.loaded.then(this.logLoaded),e.load(),document.fonts.ready.then(function(){})}},zomato.FontLoader.isSupported()&&zomato.FontLoader.triggerLoad();    </script>
+
+        <link rel="stylesheet" type="text/css" href="https://static.zmtcdn.com/gencss/t-fce05e705b469d889fdc20033ca4cdb8/l-H4sIAAAAAAAAA0tKLE7Vz0nVTS_KTNFLLi7WqcrPTUosKYawi0sSSzKTwezi1NzEPCBHH8YAiQIAP2LJTT4AAAA/h-ba1a8d626bfbdc5a56273f9283325291" />
+<link rel="stylesheet" type="text/css" href="https://static.zmtcdn.com/gencss/t-9f92db5ed45bef2afe2590e851cf283b/l-H4sIAAAAAAAAAyvIyC_JL8tMLU8t0ksuLtbJKixNLarULc3UNdQzNNAz0UsuLS7JzwXL5aQmpuWkloDYAK8X7Bk3AAAA/h-ba1a8d626bfbdc5a56273f9283325291" />
+
+    <script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('global.set', 'contentGroup2', 'Restaurants Info Direct');
+
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('city.set', 'contentGroup2', 'Restaurants Info Direct');
+
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('country.set', 'contentGroup2', 'Restaurants Info Direct');
+
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('set', 'contentGroup2', 'Restaurants Info Direct');
+
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('global.set', 'contentGroup2', 'Restaurants Reviews');
+
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('city.set', 'contentGroup2', 'Restaurants Reviews');
+
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('country.set', 'contentGroup2', 'Restaurants Reviews');
+
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('set', 'contentGroup2', 'Restaurants Reviews');</script>        <script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+            // t3 => web/restaurants
+            // t7 => aggregate
+            // t4 => country
+            // t5 => international
+            // t6 => iframe
+            // t2 => business + nye
+
+
+                            ga('create', {
+                    trackingId: 'UA-19617341-3',
+                    cookieDomain: 'auto',
+                    name: 'city'
+                });
+                ga('city.send', 'pageview');
+
+                            ga('create', {
+                    trackingId: 'UA-19617341-30',
+                    cookieDomain: 'auto',
+                    name: 'country'
+                });
+                ga('country.send', 'pageview');
+
+                            ga('create', {
+                    trackingId: 'UA-19617341-21',
+                    cookieDomain: 'auto',
+                    name: 'global'
+                });
+
+            ga('global.set', 'dimension1', true);
+            ga('global.set', 'dimension2', "India");
+            ga('global.set', 'dimension3', "Mumbai");
+            ga('global.set', 'dimension4', "Restaurant");
+            ga('global.send', 'pageview');
+
+
+
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+            <script src="//www.google-analytics.com/cx/api.js"></script>
+        <script>
+            function utmx_section(){}function utmx(){}(function(){var
+            k='64651952-4',d=document,l=d.location,c=d.cookie;
+            if(l.search.indexOf('utm_expid='+k)>0)return;
+            function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+            indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+            length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+            '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+            '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+            '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+            valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+            '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+        </script>
+        <script>
+            window.google_experiments = {};
+            window.google_experiments.ID = 'FQnzc5UZQdSMS6ggKyLrqQ';
+            cv = cxApi.getChosenVariation(window.google_experiments.ID);
+            cxApi.setChosenVariation(cv, window.google_experiments.ID);
+        </script>
+        <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1466145233705476');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1466145233705476&ev=PageView&noscript=1"/></noscript>
+    <!-- End Facebook Pixel Code -->
+
+       <script type="text/javascript">
+        window.___gcfg = {
+            isSignedOut: true,
+            parsetags: 'explicit',
+            lang: 'en'
+        };
+
+        CITY_REDIRECT = 0;COLLECTION_CITY_REDIRECT = 0;
+        var zomato = zomato || {};
+        HOST = "https://www.zomato.com/";
+        CDN = "https://b.zmtcdn.com/";
+        JS_CDN_PATH = "https://static.zmtcdn.com/genjs/v2/cl-en/";
+        CITY_ID = "3";
+        USER_ID = "29292506";
+        COOKIE_DOMAIN = "zomato.com";
+	//  ADREF = "";
+        CITY_URL = "mumbai/";
+        LANG = "en";
+        IS_ZOMATO_USER = "";
+
+        window.howdy = {
+            'm': "zomato"
+        }
+
+        window.fbst = {
+            APP_ID: '288523881080',
+            SOURCE_FB: false,
+            SOURCE_FB_CODE: false,
+            IS_FB_CONNECTED: false,
+            CONNECTED_FB_ID: '0'        }
+
+        window.gplus = {
+            CLIENT_ID: '442739719837.apps.googleusercontent.com',
+            PROMPT_TYPE: 'auto',
+            IS_GPLUS_CONNECTED: true,
+        }
+
+        zomato.documentReady = zomato.documentReady || function() {};
+        zomato.UnitSystem = "METRIC";
+        zomato.distanceUnit = "km";
+        zomato.csrft = "06c39089e0db1f8f32731df72c905614";
+        zomato.csrft_creation_time = Date.now();
+        var FLOADING_IMG_SRC = 'https://b.zmtcdn.com/images/floading.gif';
+
+        var IS_BOT = '0';
+        var ab_version_map = [];
+
+    </script>
+    <script src="https://static.zmtcdn.com/genjs/t-f0c0193d57a01b25bb3b34b3d01782c2/l-H4sIAAAAAAAAAytOLS7OzM_Ty83M08sqBgCsMcoLDgAAAA/cl-en/h-3511c32250798d31f061cf6debc4f388"></script>
+    <script>
+        window.RES_ID = "44008";
+        window.CITY_ID = "3";
+        window.CHAIN_ID = "38911";
+        window.MENU_ID = "38911";
+        window.userActionType = "pageview_res";
+        window.COUNTRY_ID = "1";
+        window.CAN_SHOW_GOOGLE_ADS = "false";
+        window.RES_URL = "https://www.zomato.com/mumbai/zaffran-lower-parel";
+        var tdata = tdata || {};
+                        tdata["offer_id"] = 297863;
+    </script><link rel="canonical" href="https://www.zomato.com/mumbai/zaffran-lower-parel/reviews" /><link rel="amphtml" href="https://www.zomato.com/mumbai/zaffran-lower-parel/reviews?amp=1" />
+        <script>
+        window.is_followed = "";
+        window.follower_user_id = "29292506";
+        window.followed_res_id = "44008";
+        window.user_id = "29292506";
+        window.user_fb_id = "0";
+        </script>
+<script>
+            var tdata = tdata || {}; tdata["track_photo"] = []; tdata["track_photo_user"] = [];
+            tdata["track_photo"][0] = "r_ODU1NDc5ODg5MD"; tdata["track_photo"][1] = "r_ODQ1NzYxNjM1MD"; tdata["track_photo"][2] = "u_TM4ODg4MjEzNzM"; tdata["track_photo"][3] = "r_MTU3MzUxOTcwOD";  tdata["track_photo_user"][0] = "1"; tdata["track_photo_user"][1] = "1"; tdata["track_photo_user"][2] = "40827678"; tdata["track_photo_user"][3] = "1";
+        </script><script>
+            var tdata = tdata || {}; tdata["track_photo"] = []; tdata["track_photo_user"] = [];
+            tdata["track_photo"][0] = "r_MTU3MzUxOTcwOD"; tdata["track_photo"][1] = "r_ODU1NDc5ODg5MD"; tdata["track_photo"][2] = "r_ODQ1NzYxNjM1MD"; tdata["track_photo"][3] = "r_ODAzODIyNTY0Nj"; tdata["track_photo"][4] = "u_TM4ODg4MjEzNzM"; tdata["track_photo"][5] = "u_I4OTU0OTIODk5M"; tdata["track_photo"][6] = "u_3NDA5ODg1OTQ0O"; tdata["track_photo"][7] = "u_ODYxODYzMzMzMj"; tdata["track_photo"][8] = "r_MTU3MzUxOTcwOD"; tdata["track_photo"][9] = "r_ODU1NDc5ODg5MD"; tdata["track_photo"][10] = "r_ODQ1NzYxNjM1MD"; tdata["track_photo"][11] = "r_ODAzODIyNTY0Nj";  tdata["track_photo_user"][0] = "1"; tdata["track_photo_user"][1] = "1"; tdata["track_photo_user"][2] = "1"; tdata["track_photo_user"][3] = "1"; tdata["track_photo_user"][4] = "40827678"; tdata["track_photo_user"][5] = "16202099"; tdata["track_photo_user"][6] = "31287074"; tdata["track_photo_user"][7] = "38367241"; tdata["track_photo_user"][8] = "1"; tdata["track_photo_user"][9] = "1"; tdata["track_photo_user"][10] = "1"; tdata["track_photo_user"][11] = "1";
+        </script>
+    <script>
+        var o2_closedBtn = '<div class="ui large disabled button order-now-action o2_closed o2pad-fix tac">Closed for Online Orders</div></div>';
+        var o2_openBtn = '<a class="ui large green button order-now-action o2pad-fix o2_link" data-app_link="http://bnc.lt/a/key_live_kco2jTV88p9tTjVZFpOiiolesAiaaEBI?channel=desktop&campaign=Restaurant_First-Fold_Restaurant-Order-Now_Sticky" href="https://www.zomato.com/mumbai/zaffran-lower-parel/order" data-source="order-button">Order Food Online</a>';
+
+        window.o2_btns_html = [o2_closedBtn, o2_openBtn];
+
+        var request = new XMLHttpRequest();
+        request.open('POST', 'https://www.zomato.com/php/geto2banner', true);
+        request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        request.onreadystatechange = function() {
+            // If successful response
+            if (request.status == 200 && request.response.length) {
+                var response = JSON.parse(request.responseText);
+                var o2_buttons = document.querySelectorAll('#we-btn-container');
+
+                // Delivery status in array
+                if(response.delivery_status < o2_btns_html.length) {
+                    // When the DOM is loaded update the buttons
+                    if(document.readyState != 'loading'){
+                        [].forEach.call(o2_buttons, function(button) {
+                            button.innerHTML = o2_btns_html[response.delivery_status];
+                        });
+                    } else {
+                        document.addEventListener('DOMContentLoaded', function() {
+                            [].forEach.call(o2_buttons, function(button) {
+                                button.innerHTML = o2_btns_html[response.delivery_status];
+                            });
+                        });
+                    }
+                }
+            }
+        };
+        // POST Banner data
+        request.send('res_id=44008&city_id=3');
+    </script>
+    <script> window.adsData = {
+    'location_id': '2018',
+    'location_type' : 'subzone',
+    'display_page' : 'restaurant',
+    'ad_format_type' : '1',
+    'res_id' : '44008'
+}; </script>
+    <!--[if IE 8]>
+    <script type="text/javascript" src="https://b.zmtcdn.com/application/javascript/respond.min.js"></script>
+    <script type="text/javascript" src="https://b.zmtcdn.com/application/javascript/pie.js"></script>
+    <![endif]-->
+</head>
+<body class="is-responsive en"  >
+
+
+    <div class="ghboxcontainer"  style="visibility: hidden; display: none;"><div id="ghbox"></div></div>
+
+        <div class="claims-app-container" id="claims-app-container"></div>
+
+
+
+<div class="ui sticky gold-sticky-top-bar show hide">
+    <div class="inner-element pt10 pb10">
+        <div class="col-l-1"></div>
+        <a href="https://www.zomato.com/mumbai/gold" class="col-l-14 tac">
+            <img src="https://b.zmtcdn.com/images/red/footer_logo_2x.png?output-format=webp" class="logo"/>
+            <span class="tagline" style="color: #d8c65f">Introducing Zomato Gold. Buy One, Get One at 1200+ top restaurants &amp; bars.</span> &#8226; <span class="coming-soon ml10">KNOW MORE</span>
+        </a>
+        <div class="col-l-1 pt10 pr20">
+            <span class="close-button right"><img class="close" src="https://b.zmtcdn.com/images/red/cross.png?output-format=webp" width="12px"></span>
+        </div>
+    </div>
+</div>
+<div id="sticky_header" class="ui sticky v2" >
+    <header class="header  breadcrumb-present  navbar" id="header">
+                            <div class="header__links__container">
+                <div class="header__links__wrapper">
+                    <a href="https://www.zomato.com/business?ref=new_header_top_nav" class="link">Products for Businesses</a>
+                    <a href="https://www.zomato.com/careers?ref=new_header_top_nav" class="link">We&#039;re hiring</a>
+                                    </div>
+            </div>
+                            <div class="header__container">
+                <div class="header__wrapper clearfix">
+                                                                <a class="logo__container left" href="https://www.zomato.com/" title="Restaurants in India, United Kingdom, UAE, South Africa, Philippines, New Zealand, Qatar &amp; Sri Lanka. Delhi Restaurants, Mumbai Restaurants, Gurgaon Restaurants, London Restaurants, Dubai Restaurants, Bangalore Restaurants, Pune, Abu Dhabi, Colombo, Hyderabad, Kolkata, Chennai, Sharjah, Manila, Auckland, Wellington, Cape Town, Johannesburg Restaurants">
+                            <img src="https://b.zmtcdn.com/images/logo/zomato_white.svg" alt="Restaurants in India, United Kingdom, UAE, South Africa, Philippines, New Zealand, Qatar &amp; Sri Lanka. Delhi Restaurants, Mumbai Restaurants, Gurgaon Restaurants, London Restaurants, Dubai Restaurants, Bangalore Restaurants, Pune, Abu Dhabi, Colombo, Hyderabad, Kolkata, Chennai, Sharjah, Manila, Auckland, Wellington, Cape Town, Johannesburg Restaurants"/>
+                        </a>
+                                                                <div class="search__container left">
+                            <div class="header__search-bar">
+
+<div id="search_main_container" class="full_search  ">
+    <div id="search_bar_wrapper" class="search_bar search-zindex" role="form">
+        <div class="search_type flex-shrink-0">
+            <div id="location_contianer">
+                <div id="location_pretext">
+                    <div class="l-pre-1" role="link" aria-label="Please type a location..." aria-describedby="location_input_sp" tabindex="0" aria-flowto="explore-location-suggest">
+                        <span class="location_placeholder ml5">
+                                                            <i class="location_select_icon" data-icon="&#129;"></i>
+                                                    </span>
+                        <span id="location_input_sp" class="location_input_sp mr5">Mumbai</span>
+                        <span class="right location-dropdown"><i class="ui icon tiny caret down left"></i></span>
+                    </div>
+                    <div class="l-pre-2 hidden">
+                        <span class="location_placeholder ml5">
+                                                            <i class="location_select_icon" data-icon="&#129;"></i>
+                                                        <label class="hdn" id="label_search_location">Please type a location...</label>
+                            <input id="location_input" role="combobox" aria-labelledby="label_search_location" aria-expanded="true" aria-autocomplete="list" aria-owns="explore-location-suggest" placeholder="Please type a location..."
+                            autocomplete="off" />
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Location drop down starts   -->
+                <div role="listbox" id="explore-location-suggest" class=" suggest-box start-steps clearfix">
+                    <div id="location-all" class="item" data-entity_type="city" data-entity_id="3">All of Mumbai</div>
+                    <ul id="location-recent" role="presentation">
+                        <li class="label ttupper">Recent Locations</li>
+                    </ul>
+                    <ul id="location-popular" role="presentation">
+                        <li class="label ttupper">Popular Locations</li>
+                        <li class="item grey-text" role="option" data-entity_type="subzone" data-entity_id="2001" >Colaba, Mumbai</li><li class="item grey-text" role="option" data-entity_type="subzone" data-entity_id="2228" >Andheri Lokhandwala, Andheri West, Mumbai</li>                    </ul>
+                    <ul id="location-suggestion-container" role="presentation"></ul>
+                </div>
+
+                <!-- Location dro down ends   -->
+            </div>
+        </div>
+        <div class="flex-shrink-1 search-box plr0i ml5 mr5">
+            <div id="keywords_container" class="col-s-16 pr0">
+                <div id="keywords_pretext">
+                    <div class="k-pre-1 hidden" style="overflow:hidden;">
+                        <span class="search-bar-icon mr5">
+                            <i class="search icon tiny"></i>
+                        </span>
+
+                        <div class="keyword_placeholder nowrap">
+                            <div class="keyword_div">Search for restaurants or cuisines...</div>
+                        </div>
+                    </div>
+                    <div class="k-pre-2  w100">
+                        <span class="search-bar-icon mr5"><i class="search icon tiny"></i></span>
+                        <label id="label_search_res" class="hdn">Search for restaurants or cuisines...</label>
+                        <input role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="keywords-by"
+                                aria-labelledby="label_search_res" id="keywords_input" class="discover-search"
+                                placeholder="Search for restaurants or cuisines..."
+                                autocomplete="off"/>
+                    </div>
+                </div>
+                <!-- keywords dro down starts   -->
+                <div id="explore-keywords-dropdown" class=" ">
+                    <div id="keywords-dd">
+                        <ul id="keywords-by" role="listbox">
+                        </ul>
+                    </div>
+                    <div class="keyword-search-start start-steps clearfix">
+                        <div class="search-screen-block hidden">
+                            <div class="ui inverted dimmer screen-block-loader">
+                                <div class="ui text loader">Coming right up...</div>
+                            </div>
+                        </div>
+
+                        <ul id="no-results" class="hidden">
+                            <li class="item no-result-found">
+                                <a class="item">
+                                    <div class="keywords-dd-l">No results found</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="popular-searches">
+                        <ul id="popular-results"
+                            data-entity-id='3'
+                            data-entity-type='city'>
+                                <li class="label">Trending Searches</li>
+                            </ul>
+                        </div>
+                                                                            <ul id="explore-by">
+                                <li class="label">Suggested Searches</li>
+
+                                <li class="item" data-item_type="cat"  data-item_id="1">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_1.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Delivery" />
+                                        <span>Delivery</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="cat"  data-item_id="13">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_13.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Pocket-Friendly Delivery" />
+                                        <span>Pocket-Friendly Delivery</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="cat"  data-item_id="8">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_8.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Breakfast" />
+                                        <span>Breakfast</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="cat"  data-item_id="9">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_9.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Lunch" />
+                                        <span>Lunch</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="cat"  data-item_id="10">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_10.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Dinner" />
+                                        <span>Dinner</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="cat"  data-item_id="3">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_3.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Drinks & Nightlife" />
+                                        <span>Drinks & Nightlife</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="cat"  data-item_id="6">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_6.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Cafés" />
+                                        <span>Cafés</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="specials"  data-item_id="31">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/special_31.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Chinese" />
+                                        <span>Chinese</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="specials"  data-item_id="13">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/special_13.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="North Indian" />
+                                        <span>North Indian</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="specials"  data-item_id="10">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/special_10.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Desserts & Bakes" />
+                                        <span>Desserts & Bakes</span>
+                                    </div>
+                                </li>
+
+                                <li class="item" data-item_type="specials"  data-item_id="14">
+                                    <div class="start-step-label">
+                                        <img class="ui middle aligned pr5 micro image search-drop-down-lazy" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/special_14.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/pixel.gif"
+                                        alt="Buffet Places" />
+                                        <span>Buffet Places</span>
+                                    </div>
+                                </li>
+                                                            </ul>
+                                            </div>
+                </div>
+
+                <!-- keywords dro down ends   -->
+            </div>
+        </div>
+        <div class="flex-shrink-0 plr0i">
+            <div role="button" tabindex="0" id="search_button" class="left ui red button">
+                Search            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    <form id="search-keyword" method="GET" action="https://www.zomato.com/index.php" class="hidden">
+        <input type="hidden" name="category"        id="category" value="0"/>
+        <input type="hidden" name="tokens"          id="selected-tokens" value=""/>
+        <input type="hidden" name="special"         id="special" value="0"/>
+        <input type="hidden" name="cuisine"         id="cuisine" value="0"/>
+        <input type="hidden" name="city"            id="city" value="3"/>
+        <input type="hidden" name="subzone"         id="subzone" value=""/>
+        <input type="hidden" name="zone"            id="zone" value=""/>
+        <input type="hidden" name="landmark"        id="landmark" value=""/>
+        <input type="hidden" name="near-me"         id="near_me" value=""/>
+        <input type="hidden" name="zipcode"         id="zipcode" value=""/>
+        <input type="hidden" name="zipcode_area"    id="zipcode_area" value=""/>
+        <input type="hidden" name="group"           id="group" value=""/>
+        <input type="hidden" name="metro"           id="metro" value=""/>
+        <input type="hidden" name="street"          id="street" value="" />
+        <input type="hidden" name="entity_type"     id="form_entity_type" value="city"/>
+        <input type="hidden" name="entity_id"       id="form_entity_id" value="3"/>
+        <input type="hidden" name="order-online"    id="online-ordering" value=""/>
+        <input type="hidden" name="q"               id="keywords_query" value=""/>
+        <input type="hidden" name="place_id"        id="place_id" value="" />
+        <input type="hidden" name="table_booking"   id="tr-header-input" value="" />
+    </form>
+</div>
+
+                            </div>
+                        </div>
+                                                                <div id="login-navigation" class="login__container right">
+
+
+
+
+    <div class="header-link">
+    <div class="ui button header-icon-button cursor-pointer clearfix top right pointing dropdown mr0">
+
+        <div class="floating ui red mini label hidden" id="notifications-count"></div>
+
+        <div class="ui left inline header-icon-menu header-icon-profile mr5">
+            <img class="lazy ui avatar image mr0 mini" data-original="https://b.zmtcdn.com/data/user_profile_pictures/355/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" alt="Seshu"/>
+        </div>
+        <div class="vertical menu" style="width: 200px; right:0; left:initial; margin:8px 0 0;">
+
+            <a href="https://www.zomato.com/users/seshu-en-29292506" class="item">
+                Profile
+            </a>
+
+            <a href="https://www.zomato.com/notifications" class="item">
+                <span class="mr10">
+                  Notifications
+                </span>
+                <div class="ui mini label grey" id="dropdown-notifications-count">0</div>
+            </a>
+
+
+            <a href="https://www.zomato.com/users/seshu-en-29292506/bookmarks" class="item">
+                Bookmarks
+            </a>
+
+            <a href="https://www.zomato.com/users/seshu-en-29292506/reviews" class="item">
+                Reviews
+            </a>
+
+            <a href="https://www.zomato.com/users/seshu-en-29292506/network" class="item">
+                Network
+            </a>
+
+            <a href="https://www.zomato.com/invite" class="item">
+                Find friends
+            </a>
+
+            <a href="https://www.zomato.com/users/seshu-en-29292506/edit" class="item">
+                Settings
+            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="ui divider mt0 mb0"></div>
+            <a id="logout" href="https://www.zomato.com/logout?noReturnOnLogout=FALSE&amp;ctoken=06c39089e0db1f8f32731df72c905614" class="item">Log out</a>
+        </div>
+
+        <span class="username right ml0">
+        Seshu
+        <i class="ui caret down icon" data-icon="&#61655;"></i>
+        </span>
+
+    </div>
+</div>
+
+
+                        </div>
+                                    </div>
+            </div>
+                            <div class="header__navigation__container">
+                <div class="header__navigation__wrapper clearfix">
+                    <div class="left h100">
+                        <a href="https://www.zomato.com/mobile?ref=new_header_top_nav" class="header__navigation__link get-the-app">
+                            <img src="https://b.zmtcdn.com/images/icons/get-the-app-plain.svg"/>
+                            <span class="label">Get the App</span>
+                        </a>
+                    </div>
+                    <div class="right h100">
+                                                                            <a href="https://www.zomato.com/mumbai/order" id="header-order-food-btn" class="header__navigation__link left">
+                                <img src="https://b.zmtcdn.com/images/icons/order-online.svg"/>
+                                <span class="label">Order Food</span>
+                            </a>
+                                                                            <a href="https://www.zomato.com/mumbai/restaurants?table_booking=1" id="tr-header-bttn" class="header__navigation__link left">
+                                <img src="https://b.zmtcdn.com/images/icons/book-a-table.svg"/>
+                                <span class="label">Book a Table</span>
+                            </a>
+                                                                                            </div>
+                </div>
+            </div>
+                    </header>
+            <div class="mini-header row">
+            <div class="wrapper">
+                <div class="row mini-header__breadcrumb">
+                    <div class="col-l-10 col-m-10">
+                        <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+                    class="ui mini breadcrumb">
+                        <span>
+                            <a href="https://www.zomato.com" itemprop="item" class="tduh section home">
+                                <span itemprop="name" class="grey-text">Home
+                                </span>
+                            </a>
+                        </span>
+                        <meta itemprop="position" content="1" />
+                    </li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+                            class="ui mini breadcrumb ">
+                                <div class="left"> <i class="right angle tiny icon"></i>
+                                </div>
+                                <span>
+                                    <a href="https://www.zomato.com/india" itemprop="item">
+                                        <span itemprop="name" class="tduh grey-text">India</span>
+                                    </a>
+                                </span>
+                                <meta itemprop="position" content="2" />
+                            </li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+                            class="ui mini breadcrumb ">
+                                <div class="left"> <i class="right angle tiny icon"></i>
+                                </div>
+                                <span>
+                                    <a href="https://www.zomato.com/mumbai/restaurants" itemprop="item">
+                                        <span itemprop="name" class="tduh grey-text">Mumbai</span>
+                                    </a>
+                                </span>
+                                <meta itemprop="position" content="3" />
+                            </li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+                            class="ui mini breadcrumb ">
+                                <div class="left"> <i class="right angle tiny icon"></i>
+                                </div>
+                                <span>
+                                    <a href="https://www.zomato.com/mumbai/south-mumbai-restaurants" itemprop="item">
+                                        <span itemprop="name" class="tduh grey-text">South Mumbai</span>
+                                    </a>
+                                </span>
+                                <meta itemprop="position" content="4" />
+                            </li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+                            class="ui mini breadcrumb ">
+                                <div class="left"> <i class="right angle tiny icon"></i>
+                                </div>
+                                <span>
+                                    <a href="https://www.zomato.com/mumbai/lower-parel-restaurants" itemprop="item">
+                                        <span itemprop="name" class="tduh grey-text">Lower Parel</span>
+                                    </a>
+                                </span>
+                                <meta itemprop="position" content="5" />
+                            </li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+                            class="ui mini breadcrumb ">
+                                <div class="left"> <i class="right angle tiny icon"></i>
+                                </div>
+                                <span>
+                                    <a href="https://www.zomato.com/mumbai/zaffran-lower-parel" itemprop="item">
+                                        <span itemprop="name" class="tduh grey-text">Zaffran</span>
+                                    </a>
+                                </span>
+                                <meta itemprop="position" content="6" />
+                            </li><li class="ui mini breadcrumb">
+                                <div class="left"> <i class="right angle tiny icon"></i>
+                                </div>
+                                <h1 class="grey-text">Zaffran reviews
+                                </h1>
+                            </li></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="resp-search-container" class="search-box-area"></div>
+
+<!-- Headliner -->
+
+<!-- /Headliner -->
+<div class="container" id="mainframe">
+    <div class="wrapper mtop">
+        <div class="row">
+
+
+            <div class="res-info-left col-l-11">
+                <div class="ui segment res-header-overlay vr" style="padding:0; ">
+                    <div class="row" >
+                        <div class="col-s-4 obp_small">
+                            <div class="row pos-relative">
+                                <div class="pl20 ptop0 pbot0 col-s-16 clearfix">
+                                    <div id="progressive_image" data-url="https://b.zmtcdn.com/data/pictures/chains/6/36216/31acfe52d9db80e8e40c453aa09d8be4.jpg?fit=around%7C200%3A150&crop=200%3A150%3B%2A%2C%2A" class="mb0 ui segment o2-tab-res wrapper progressive_img hero--restaurant" style="background-image : url('data:image/jpg?;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwQDAwQEAwQFBAQFBgoHBgYGBg0JCggKDw0QEA8NDw4RExgUERIXEg4PFRwVFxkZGxsbEBQdHx0aHxgaGxr/2wBDAQQFBQYFBgwHBwwaEQ8RGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhr/wAARCAAyADIDASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAAAAQGBwgJAgUD/8QAMxAAAQMDAgMFBQkBAAAAAAAAAQACAwQFEQYIBxJREyExQWEiMjNxgRUWGENSVGKCkaH/xAAaAQACAwEBAAAAAAAAAAAAAAAEBQACBgED/8QAIREAAgICAQUBAQAAAAAAAAAAAQIAAwQRBRITMUFRISL/2gAMAwEAAhEDEQA/AJ7O6vSuQBUsJPqlY3Nac5Q4zNwfVZPadmq7hcYoxK92XDzVgPudXSWyB7A89wzhLc3OTEIB9ztdV1zAIN/ZeEbmdOHOJh3eqSSbqdLRuLXVDQR6qi1daKm3NOQ/vCZUmmbhcap8kbpA35qmPyFdy7l76nx8g0vNHW7q9LOOBUNz80S7qtLw+/UNH1WZRtVfSXEMJkwD1Xw1NHWNLezdJnHkSjO+C4Ue5ftEKWM04/FjpT9yz/ULKHluXWX/AKhE/sH2I/ODNi+075EXNy0EK79htNBDHHT1XKBy+arPt+tHZyxzlmSSrA6viradsU9MxzWgd5CCzcWq6rdg3CMa1ksBQ/sbXEe30NJPim5XD0Uftqqehjy1rfaSjUVfVVEpErnH5puCnkle3nJIz4LIIoxwa18R9fivnuLrBoidV8lJI/tOyHMfPCQUFsiuN3hZLB2kbnAeCkC0aLkvjIxDASOuFNmh+DtHTGGarjHO3v7wnPHUW2nu61KcjdVj1Ck6J16jBg4R2h8MbjRDLmg+76IVoWafomMa0Mb7IA8ELY6HyYX+vszZ4X8VqXSzI2VEeeVTu7cNYrvQinqGNBxheozY4W/mJXFsndGfilCsQ6dDeIyC9D9a+ZHNdqXT9174pWtJXdjjs0tWwz1TOTPmVKcOzV8fhMQlTdoNRGPYqXD6penHYyHYEaNyeUy9O57uldQ6XtVPGyKeEux1CfrNdWGGmdIyriGB+pRQNp9yj+HWyD+y6dtcvZYWC4S4P8imSsqjQiplZzs+Z7s3Gq1smkaKpmA4jx9UJnO2g3JziTWSZJz4oXe7PPsS8uB0RgdEIXhC4YHRGB0QhSSGB0RgdEIUkhgdEIQpJP/Z'); background-size: cover!important;background-position: center center;background-repeat: no-repeat; overflow:visible;border: none;box-shadow:none; height: 135px; background-color: #fafafa;">
+                                                                                    <a href="https://www.zomato.com/mumbai/zaffran-lower-parel/info">
+                                                <div class="progressive_img_loaded"></div>
+                                            </a>
+
+                                        <div class="col-l-16" style="z-index: 1;">
+                                            <div class="row res-disclaimer">
+                                                                                                                                                                                      <div class="clearfix">
+                                                    <div class="resbox__header">
+
+
+
+                                                                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-s-12 pr20" >
+                                                        <div class="row mtop">
+                                <div class="col-l-12">
+                                    <h1 class="res-name left mb0" style="height: 75px;">
+                                                                                <a href="https://www.zomato.com/mumbai/zaffran-lower-parel" title="Zaffran Mumbai"
+                                            style="font-size: 120%" class="ui large header left">
+                                            Zaffran</a>
+                                    </h1>
+                                    <div class="mb5 pt5 clear">
+                                                                                            <a href="https://www.zomato.com/mumbai/lower-parel-restaurants" class="left grey-text fontsize3">
+                                                Lower Parel                                                </a>
+                                                                                                                                <span class="middot grey-text">&nbsp;&nbsp;&middot;&nbsp;</span>
+                                            <span class="res-info-estabs grey-text fontsize3">
+                                                <a class="grey-text fontsize3" title="View all Casual Dining in " href="https://www.zomato.com/mumbai/casual-dining">Casual Dining</a>                                            </span>
+
+                                    </div>
+
+                                                                        <div class="clear"></div>
+                                </div>
+                                <div class="col-l-4 tac left">
+                                    <div class="right">
+
+                                                                                    <div class="right rating-info rrw-container rrw-container-44008">
+
+                                                                                                    <div class="res-rating pos-relative clearfix mb5">
+                                                        <div tabindex="0" aria-label="Rated" data-res-id="44008" class="rating-for-44008 rating-div rrw-aggregate level-6">
+                                                            3.6<span>/5</span>                                                        </div>
+                                                    </div>
+                                                    <span class="mt2 mb0 rating-votes-div rrw-votes grey-text fontsize5 ta-right" tabindex="0" aria-label="1043  votes">
+                                                        <span class='tooltip_formatted fbold' title='<center>Votes marked as spam are not considered towards aggregate rating<br/>(Total 1078 votes, 35 marked as spam)</center>'><span itemprop='ratingCount'>1043</span>  votes</span>                                                    </span>
+    												<span class="grey-text middot hidden">&middot;</span>
+                                                                                                                                                </div>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <div class="ui divider"></div>
+                                <div class="clearfix zblack">
+                                                                            <span class="res-info-estabs zgreen fontsize3">
+                                            Open now                                        </span>
+                                    <span class='middot grey-text'>&nbsp;&middot;&nbsp;&nbsp;</span><a class="zred" title="View all North Indian Restaurants in Mumbai" href="https://www.zomato.com/mumbai/restaurants/north-indian">North Indian</a>, <a class="zred" title="View all Mughlai Restaurants in Mumbai" href="https://www.zomato.com/mumbai/restaurants/mughlai">Mughlai</a>, <a class="zred" title="View all Biryani Restaurants in Mumbai" href="https://www.zomato.com/mumbai/restaurants/biryani">Biryani</a>, <a class="zred" title="View all Seafood Restaurants in Mumbai" href="https://www.zomato.com/mumbai/restaurants/sea-food">Seafood</a><span class='middot grey-text'>&nbsp;&nbsp;&middot;&nbsp;</span>
+                                            <span class="grey-text">
+                                                Costs ₹1,300 for two                                            </span>
+                                                                    </div>
+
+                                                    </div>
+                    </div>
+                </div>
+    <div class="ui res-tabs-o clearfix">
+        <div class="respageMenuContainer">
+            <div class="ui removeMenuBorder respageMenu large menu res-tabs-inner mb0">
+                                <a class="item respageMenu-item restaurant-tab-item-jumbo-track " href="https://www.zomato.com/mumbai/zaffran-lower-parel/info" data-tab_type="info" data-current_tab="/reviews">
+                    <span class="fontsize2">
+                        Overview                    </span>
+                </a>
+                                    <a class="item respageMenu-item o2_link restaurant-tab-item-jumbo-track " href="https://www.zomato.com/mumbai/zaffran-lower-parel/order"
+                    data-source="order-tab" data-tab_type="order" data-current_tab="/reviews">
+                        <span class="fontsize2">
+                            Order Online                        </span>
+                                                <div class="ui green tiny label"><div class="fontsize5 mt2">10% OFF</div></div>
+                                            </a>
+                                                    <a class="item restaurant-tab-item-jumbo-track " id="res_page_book_tab" href="https://www.zomato.com/mumbai/zaffran-lower-parel/book" data-trprovider="MEDIO_ZOMATO" data-tab_type="table_booking" data-current_tab="/reviews">
+                        <h2 class="fontsize2 normal">
+                            Book                        </h2>
+                    </a>
+                                                                    <a class="item respageMenu-item restaurant-tab-item-jumbo-track "  href="https://www.zomato.com/mumbai/zaffran-lower-parel/menu" data-tab_type="menu" data-current_tab="/reviews">
+                        <span class="fontsize2">
+                            Menu                        </span>
+                    </a>
+                                                                    <a class="item respageMenu-item restaurant-tab-item-jumbo-track active" href="https://www.zomato.com/mumbai/zaffran-lower-parel/reviews" data-tab_type="reviews" data-current_tab="/reviews">
+                        <span class="fontsize2">
+                            Reviews (1044)                        </span>
+                    </a>
+                                    <a class="item respageMenu-item photosTab restaurant-tab-item-jumbo-track " data-count = "548" href="https://www.zomato.com/mumbai/zaffran-lower-parel/photos" data-tab_type="photos" data-current_tab="/reviews">
+                        <span class="fontsize2" data-count = "548">
+                        Photos (548)                        </span>
+                    </a>
+                                <div class="nav_bar_arrow nav_bar_arrow_left ml11 hidden"><i class="angle left icon zred"></i></div>
+                <div class="nav_bar_arrow nav_bar_arrow_right mr11 hidden"><i class="angle right icon zred"></i></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+
+    <div class="restab_wrap">
+
+                    <div id="tabtop" class="tabcontent-wrapper brstd  reviews ">
+                <div class="res-my-review-container reviews noborder" style="overflow:initial;">
+                        <div class="filler-area">
+                            <div class="resbox-review-form"><div class="ui segment">
+    <div role="group" class="res-my-review-container no-review" id="my-reviews-container">
+        <div class="filler-area hom">
+                    <div class="row clearfix mbot0">
+                <div class="col-l-8">
+                    <h2 tabindex="0">Write a Review</h2>
+                </div>
+                <div class="col-l-8 clearfix">
+                    <div class="cancel-quick-review hidden zred right"> Cancel </div>
+                </div>
+            </div>
+            <div class="clearfix mb5">
+                <div class="res-reviews-container  review-form-container" data-fb_publish ="off" data-res_id="" data-snippet="restaurant-review" data-is-res-page-review="true" data-is-quick-review="true">
+                    <div class="quickreview resbox-quickreview">
+                        <div id="quickreview-container" class="quickreview__container js-closed clearfix">
+                            <div id="js-quickreview-trigger" class="js-closed">
+                                <div id="quick_review_initial">
+                                    <div class="ui left icon fluid large input" style="float: none;">
+                                        <input type="text" placeholder="Help other foodies by sharing your review of Zaffran" style="cursor: text;" readonly>
+                                        <i class="write icon"></i>
+                                    </div>
+                                    <button class="review_submit_button ui button green" style="margin-top: 14px;">
+                                        Add Your Review                                    </button>
+                                </div>
+                            </div>
+                            <div id="quickreview-form" class="quickreview__form hidden pos-relative clearfix">
+
+
+
+
+
+            <div id="review-form-top" class="section-btop write-review-form-cont" style="overflow: initial;">
+            <!-- <div class="default-section-title mbot0 mt0" >
+                Help other foodies by sharing your review of Zaffran            </div> -->
+            <div class="review-form-container no-events pos-relative"
+     data-fb_publish ="off"
+     data-review_type="REVIEW"
+     data-is_edit="0"
+     data-review_id="0"
+     data-res_id="44008"
+     data-snippet="restaurant-review"
+     data-is-quick-review="false"
+     data-is-home-page-review="false">
+
+
+    <div class="row pb1">
+                <div class="col-s-2">
+            <div>
+                <img class="ui image avatar tiny lazy" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/355/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A" alt="Seshu En"/>
+            </div>
+        </div>
+
+                <div class="col-s-14">
+
+
+
+                <!-- Rating Widget -->
+                                <div class="ui segment res-rating-widget mbot" style="">
+                    <div class="restaurant-rating-widget">
+
+        <div class="review-rating-widget your-rating rating-widget rating-widget-res_44008" data-res_id="44008" data-rating-for="restaurant" data-review_id="" >
+            <div class="your-rating-info grey-text mbot0 ttupper bold" tabindex="0">Your Rating</div>
+            <div class="">
+                <div class="rating-widget-stars left mr10" id="review-form" data-za-event="click" data-za-intent="raterestaurant.post">
+                    <div class="user_starssel_0 rating-cls" data-originalclass="user_starssel_0" data-rating="0"><a aria-label="1.0" href="#" class="level-1   " data-num="2" data-hover-rating="1.0" data-original-title="1.0">&nbsp;</a><a aria-label="1.5" href="#" class="level-2   " data-num="3" data-hover-rating="1.5" data-original-title="1.5">&nbsp;</a><a aria-label="2.0" href="#" class="level-3   " data-num="4" data-hover-rating="2.0" data-original-title="2.0">&nbsp;</a><a aria-label="2.5" href="#" class="level-4   " data-num="5" data-hover-rating="2.5" data-original-title="2.5">&nbsp;</a><a aria-label="3.0" href="#" class="level-5   " data-num="6" data-hover-rating="3.0" data-original-title="3.0">&nbsp;</a><a aria-label="3.5" href="#" class="level-6   " data-num="7" data-hover-rating="3.5" data-original-title="3.5">&nbsp;</a><a aria-label="4.0" href="#" class="level-7 big  " data-num="8" data-hover-rating="4.0" data-original-title="4.0">&nbsp;</a><a aria-label="4.5" href="#" class="level-8 big  " data-num="9" data-hover-rating="4.5" data-original-title="4.5">&nbsp;</a><a aria-label="5.0" href="#" class="level-9 big bigger " data-num="10" data-hover-rating="5.0" data-original-title="5.0">&nbsp;</a>
+                    </div>
+                </div>
+
+                <div class="rating-top pt5">
+                    <div tabindex="0" class="rating-widget-num left mr5 fontsize1 bold hidden" data-original-rating-num="-" >
+                        -
+                    </div>
+                    <a href="#" data-icon="x" class="rating-clear hidden"></a>
+                    <img class="hidden rating-working ie-rating-fix" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="https://b.zmtcdn.com/images/floading.gif" alt="saving"/>
+                <div class="clear"></div>
+                </div>
+
+
+
+                <div class="clear"></div>
+
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+                    </div>
+                </div>
+                                <!-- /Rating Widget -->
+
+
+                <!-- Review Textarea -->
+                <div class="clearfix mbot pos-relative"  style="padding: 0;">
+                    <div role="textbox" aria-multiline="true" contenteditable="true" class="review-form-textarea right brtop" id="review-form-textarea-id" style="min-height:100px;">
+
+                    </div>
+                    <div id="review-length-error-message">
+                                                <span class="grey-text"> at least 140 characters </span>
+                                            </div>
+                </div>
+
+
+                <!-- /Review Textarea -->
+
+                <!-- Blog URL -->
+                                <!-- /Blog URL -->
+
+
+                <!-- Tags -->
+                <div class="row clearfix">
+                    <div class="review-with-tags-cont mbot col-l-12">
+                        <div contenteditable="true" class="left review-with-tags with-tags-class pl10 allowTagsOnly" id="review-with-tags-id" data-placeholder="Use @ to tag friends..." ></div>
+                    </div>
+
+                    <div class="col-l-4">
+                        <div class="ui basic label large dropdown popup-res-icons" data-icon="&#xE051;" style="" id="js-photo-dropdown">
+                            Add Photos
+                            <div class="menu">
+                                <div class="header">Add photos to this review</div>
+                                <div class="item">
+                                    <div class="ui fluid button js-upload-file">Upload Photo</div>
+                                </div>
+                                                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Tags -->
+
+                <div class="ui segment review-photos  hidden "  data-review_id="0" data-is_res_page="">
+
+                    <div id="review-photos-overlay" class="hidden"></div>
+
+                    <!-- Uploaded Photos -->
+                    <div id="uploaded-photos-container" class="clearfix  hidden " style="margin: 0;">
+                        <b class="uploaded-photos-heading">Attached Photos</b>
+                        <a href="#" class="right remove-uploaded-review-photos" >Remove all</a>
+                        <div class="right mr5">&middot;</div>
+                        <a href="#" id="upload-more-review-photos" class="right mr5 file-chooser-link">Upload more</a>
+                        <div class="clear"></div>
+                        <ul id="uploaded-photos" class="review-form-uploaded-pictures-container pt5 clearfix">
+                                                    </ul>
+
+                                            </div>
+                    <!-- /Uploaded Photos -->
+
+                    <!-- File input and error messages -->
+                    <div id="add-photos-select" class="add-photos-select clearfix hidden">
+                        <div class="review-dragdrop" style="position: relative;">
+                            <div class="clearfix default add-photos-btns" style="position: relative;">
+
+
+                                <input type="file" multiple="multiple" class="file-chooser" data-resid="44008" />
+                                <input type="hidden" id="instagram_page_size" name="instagram_page_size" value="6" />
+                                <a class="file-chooser-link upload-button-link each-upload-button-type-1 hidden"></a>
+                                <a href="#" class="inst upload-side-by-side each-upload-button-type-1 border-left-only hidden"  data-instagram-redirect-uri="https://www.zomato.com/instagram_success.php&amp;state=06c39089e0db1f8f32731df72c905614" data-instagram-auth-url="https://instagram.com/oauth/authorize/?client_id=87c9ab848c78448e92aa995f886c30d6&amp;redirect_uri=https://www.zomato.com/instagram_success.php&amp;state=06c39089e0db1f8f32731df72c905614&amp;response_type=code" data-instagram-id="" data-instagram-client-id="87c9ab848c78448e92aa995f886c30d6" data-instagram-token=""></a>
+
+                            </div>
+
+                            <div class="ui message loading clearfix">
+                                <div class="loading-filename"></div>
+                                <span class="loading-text">Uploading...</span>
+                                <div class="ui tiny red progress">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+
+                            <span class="error bad-file hidden">Unfortunately we don&#039;t support that file type yet. Try image files less than 5MB.</span>
+                            <span class="error failed-request hidden">Something went really wrong and we can&#039;t process that image.</span>
+                        </div>
+                    </div>
+                    <!-- /File input and error messages -->
+
+
+                    <!-- Instagram connect dialog -->
+                    <div id="connect-instagram-dialog" class="add-photos-select clearfix hidden">
+                        <div class="ui segment">
+                            <a href="#" class="ui labeled icon red button connect-instagram-link">
+                                <i class="instagram large icon"></i>
+                                connect with instagram
+                            </a>
+                            <a class="ui button right pr10" href="#" id='connect-instagram-cancel-link'>cancel</a>
+                        </div>
+                    </div>
+                    <!-- /Instagram connect dialog -->
+
+                    <!-- Instagram and Restaurant Uploaded Photo Review -->
+                    <div id="photo-review" class="hidden clearfix">
+                        <b class="photo-review-heading">Selected photos</b>
+                        <span class="right"><a class="ui button edit-selected-inst" href="#">Edit selection</a></span>
+                        <div class="clear"></div>
+                        <ul id="selected-instagram"></ul>
+                        <ul id="selected-uploaded-restaurant-photos"></ul>
+                    </div>
+                    <!-- /Instagram and Restaurant Uploaded Photo Review -->
+
+                    <!-- Restaurant Uploaded Photos -->
+                                        <!-- /Restaurant Uploaded Photos -->
+
+                    <!-- Instagram Selection -->
+                                        <!-- /Instagram Selection -->
+
+                </div>
+
+
+                <!-- Footer -->
+                <div class="clearfix mtop0 row">
+                    <div class="col-l-9 mt5">
+                                                <div id="review-share" class="left clearfix">
+                            <div class="left clearfix review-share-trigger-box onoffswitchfb">
+                                <div id="myonoffswitchfb" class="ui toggle  checkbox rev-js-facebook-connect  review-share-trigger">
+                                    <input type="checkbox" class="id-onoffswitchfb"  >
+                                    <label>Share on Facebook</label>
+                                </div>
+                            </div>
+                            <div class="left clearfix review-share-trigger-box onoffswitchtw">
+                                <div id="myonoffswitchtw" class="ui toggle  checkbox review-share-trigger ml10">
+                                    <input type="checkbox" class="id-onoffswitchtw rev-js-twitter-connect-then-post"  >
+                                    <label>Share on Twitter</label>
+                                </div>
+                            </div>
+                        </div>
+                                            </div>
+
+                    <div class="col-l-7">
+                        <a id="review-submit" class="review_submit_button right ui button green w75" data-update-flag="insert" data-reviewed="true">
+                            <span class="default-text">
+                                                                    Publish Review
+                                                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="review-form-error-message error-message-highlight hidden mtop0 ui error message"></div>
+                <div class="review-error-msg-container mtop review-err-msg hidden ui error message">
+                    <span class="reviewMessage"></span>
+                </div>
+                <!-- /Footer -->
+                            </div>
+        </div>
+        </div>
+            </div>
+        <div class="review-form-success-message error-message-highlight hidden mtop"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                    </div>
+    </div>
+</div>
+      </div>
+                        </div>
+                    </div><div class="res-page-review-tab mtop">
+<div class="zs-load-more-container" id="reviews-container" data-filter="reviews-top">
+
+    <div class="notifications-content">
+
+                        <div class="clearfix reviews-subhead  pt15 ui segments white-bg mbi">
+                <div class="clearfix reviews-subhead-sort">
+
+                                        <h2 id="quick-review-form" class="mb0 pl15">
+                        <a class="fontsize2" href="https://www.zomato.com/mumbai/zaffran-lower-parel/reviews#tabtop">
+                            Reviews                        </a>
+                    </h2>
+
+                                            <div class="col-l-16">
+                            <div class="famous_reviewers mt15 ml5 mr5">
+                                <div class="famous_reviewers__pictures">
+                                                                            <div class="famous_reviewers__picture">
+                                            <img class="avatar image left lazy"
+                                                alt="Abhinit Shah"
+                                                src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp"
+                                                data-original="https://b.zmtcdn.com/data/user_profile_pictures/27c/45337eae8be3e625c04b3c9435ef127c.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" />
+                                        </div>
+                                                                            <div class="famous_reviewers__picture">
+                                            <img class="avatar image left lazy"
+                                                alt="Jai Gidwani"
+                                                src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp"
+                                                data-original="https://b.zmtcdn.com/data/user_profile_pictures/013/edbc67a38c84c233009ebdb721b7b013.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" />
+                                        </div>
+                                                                            <div class="famous_reviewers__picture">
+                                            <img class="avatar image left lazy"
+                                                alt="Vivek More"
+                                                src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp"
+                                                data-original="https://b.zmtcdn.com/data/user_profile_pictures/3a4/f211e446c6a112fcb3d24a03d469c3a4.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" />
+                                        </div>
+                                                                    </div>
+                                <div class="ml10 fontsize4 ln18">
+                                    <a class="zred medium" href="https://www.zomato.com/users/vivek-more-27537235">
+                                                Vivek More
+                                            </a> and <a class="zred medium" href="https://www.zomato.com/mumbai/zaffran-lower-parel/reviews">
+                                                1043 others
+                                            </a> have reviewed this place                                </div>
+                            </div>
+                        </div>
+                                        <div class="clear"></div>
+                    <div id="selectors" class="review-sorting text-tabs selectors ui secondary pointing menu mt0" data-limit="5">
+                        <a data-sort="reviews-top" class="item default-section-title top active selected">Popular&nbsp;<span class="grey-text">42</span></a><a data-sort="reviews-network" class="item hom default-section-title network empty">Following&nbsp;<span class="grey-text">0</span></a>
+                            <a data-sort="reviews-dd" class="item default-section-title everyone empty">All Reviews&nbsp;<span class="grey-text">1044</span></a>
+                                <a data-sort="reviews-delivery" class="item default-section-title everyone empty">Delivery Reviews&nbsp;<span class="grey-text">27</span></a>
+                            <a data-sort="reviews-blog" class="item default-section-title top empty">Blogs&nbsp;<span class="grey-text">1</span></a>
+
+                                                  <div class="right item review-sort sortby" style="padding-bottom: 19px;">
+                            <div id="sort-container" class="ui floating labeled dropdown button  " data-limit="5">
+                              <span class="sort-sel text">Date<span class='right lh26px'>&nbsp;&darr;</span></span>
+                              <div class="sort-options menu" style="left:auto; right:0; width: auto;">
+                                <a class="item selected" data-text="Date<span class='right lh26px'>&nbsp;&darr;</span>" data-sort="reviews-dd" data-value="0"  href="/mumbai/zaffran-lower-parel/reviews?sort=dd#reviews-container" target="_blank">
+                                    Date - new to old                                </a>
+                                <a class="item " data-text="Rating<span class='right lh26px'>&nbsp;&darr;</span>" data-sort="reviews-rd" data-value="1" href="/mumbai/zaffran-lower-parel/reviews?sort=rd#reviews-container" target="_blank">
+                                    Rating - high to low                                </a>
+                                <a class="item " data-text="Rating<span class='right lh26px'>&nbsp;&uarr;</span>" data-sort="reviews-ra" data-value="2" href="/mumbai/zaffran-lower-parel/reviews?sort=ra#reviews-container" target="_blank">
+                                    Rating - low to high                                </a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="res-reviews-container"><div class="my-rev-cont"><div class="clear"></div></div></div>
+        <div class="res-reviews-container res-reviews-area">
+            <div class="zs-following-list">
+                <script type='application/javascript'>
+                       window.translations = window.translations || {};
+                       var translations = {"zm_photo_viewer_share":"Share","zm_review_actions_comment":"Comment","zm_review_actions_comments":"Comments","zm_review_actions_share":"Share","zm_review_actions_thank":"Like","zm_review_actions_thanked":"Liked","zm_review_actions_thanks":"Likes","zm_review_comment_item_comment_was_removed":"This comment was removed due to inappropriate content.<br\/>Click to see the comment.","zm_review_comment_item_delete":"delete","zm_review_comment_item_edit":"edit","zm_review_comment_item_history":"history","zm_review_comment_item_read_more":"read more","zm_review_comment_item_remove":"hide","zm_review_comment_item_report":"report","zm_review_comment_item_reported":"reported","zm_review_comment_item_restore":"unhide","zm_review_comment_thread_submit":"Submit","zm_review_comment_thread_write_comment":"Write a comment... Use @ to tag friends","zm_review_owner_comment_thread_send":"Send","zm_review_replies_item_are_you_sure":"Are you sure?","zm_review_replies_item_hide":"Hide","zm_review_replies_item_no":"No","zm_review_replies_item_remove":"Remove","zm_review_replies_item_resp_was_removed":"This response was removed due to inappropriate content.<br\/>Click to see the response.","zm_review_replies_item_yes":"Yes","zm_review_snippet_comment":"comment","zm_review_snippet_thank":"like","zm_review_snippet_unthank":"unlike","zm_user_profile_zomato_celebrity_user_desc":"Click to know more about celebrity profiles.","zm_user_profile_zomato_celebrity_user_title":"Zomato Celebrity Reviewer","zm_user_profile_zomato_verified_user_desc":"We have met and verified this user. Click to know more about verified profiles.","zm_user_profile_zomato_verified_user_title":"Zomato Verified Reviewer"};
+                       var keys = Object.keys(translations);
+                       for(var key in keys) {
+                            window.translations[keys[key]] = translations[keys[key]];
+                       }
+                </script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32694718" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  br0 ">
+                        <div class="review-header-text mbot0">
+
+                                            </div>
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/imdnextbuffet">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Ritesh Bhagwati" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/900/345ee1720192d1bdf0f82cc512c89900.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/imdnextbuffet" data-entity_id="33215" >
+            Ritesh Bhagwati
+          </a>
+
+      </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            60 Reviews
+                                ,
+                          209 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="33215" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/lZeAqX">
+                        <time datetime="2017-12-08 19:48:40">4 days ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 " style="line-height: 20px;">
+                <div aria-label="Rated 5.0" title="Legendary" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-9" data-iconr="é">Rated</div>&nbsp;
+                                Firstly, I'm huge fan of zaffran restaurant as their food quality plus quantity is impeccable.<br />
+<br />
+So today I ordered chicken tikka biryani which happens to be my first ever time order online and also first ever time tasting it at this place and needles to say they made my day. They quantity was so perfect and the taste was so yummy that I finished the whole biryani in 15 mins. It would henceforth be in my the list of items to order when hunger strikes back. Do give It a try you won't be disappointed.
+                                                <div class="clear"></div>
+            </div>
+
+                        <div class="photosContainer parentPhotoBox mtop0 mbot0 thumbsContainer">
+
+                <div class="ui tiny images">
+
+
+                    <div class="ui image js-heart-container" data-photo_id="u_jgNDAwMzIzNjMz">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_jgNDAwMzIzNjMz"
+                           data-index="0">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/749/6e1244acd3c25b1ba6126c9b0fd9a749_1512742721.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_wMzI5MDE5ODY4M">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_wMzI5MDE5ODY4M"
+                           data-index="1">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/fef/5dba484544c51a4928a5cec4cbb08fef_1512742722.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+                                        <div id="restaurant_review_actions_32694718"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32694718"> </div>
+                <div id="restaurant_review_comment_thread_32694718"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[],"fetched_comments_count":0,"fetched_replies_count":0,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":0,"review_id":32694718,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":0,"review_type":"REVIEW","review_user_id":33215,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":33215,"user_img_alt":"Ritesh Bhagwati","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/900\/345ee1720192d1bdf0f82cc512c89900.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Ritesh Bhagwati","username":"Seshu En","upvotes":0});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32659115" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/RuchAgrawal">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="RUCHI AGRAWAL" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/a13/d712cd5c1fdbed08edfc9d51b95e8a13.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/RuchAgrawal" data-entity_id="1079944" >
+            RUCHI AGRAWAL
+          </a>
+
+      </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            17 Reviews
+                                ,
+                          58 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="1079944" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/zDEgoG">
+                        <time datetime="2017-12-05 12:56:09">7 days ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 " style="line-height: 20px;">
+                <div aria-label="Rated 3.0" title="Average" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-5" data-iconr="ö">Rated</div>&nbsp;
+                                Not a place for vegetarians. Not many options. And available ones are also not too good. Although my non vegetarian friends really like the non veg food.
+                                                <div class="clear"></div>
+            </div>
+
+
+
+
+                                        <div id="restaurant_review_actions_32659115"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32659115"> </div>
+                <div id="restaurant_review_comment_thread_32659115"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[],"fetched_comments_count":0,"fetched_replies_count":1,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[{"comment_id":3497789,"comment":"Dear Ruchi, \n\nThank you for sharing your feedback and experience. We are extremely sorry for the inconvenience for me.  We have taken note of your points of concern and are working on getting ourselves better.\n\nHoping you would give us another chance.\n\nBest Regards, \nTeam Zaffran","user_id":39975570,"last_edited_timestamp":"2017-12-06 17:14:49","edits_count":0,"admin_removed":0,"active_flag":1,"friendly_time":"6 days ago","comment_user_name":"Zaffran","comment_user_id":39975570,"is_merchant_visible":false}],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":1,"review_id":32659115,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":0,"review_type":"REVIEW","review_user_id":1079944,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":1079944,"user_img_alt":"RUCHI AGRAWAL","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/a13\/d712cd5c1fdbed08edfc9d51b95e8a13.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"RUCHI AGRAWAL","username":"Seshu En","upvotes":0});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32638374" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/utkarsh199">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Utkarsh Mehta" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/a2a/87d974ff47dd047202c0f092e7284a2a.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/utkarsh199" data-entity_id="2084240" >
+            Utkarsh Mehta
+          </a>
+
+      </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            39 Reviews
+                                ,
+                          271 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="2084240" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/nYaEmw">
+                        <time datetime="2017-12-03 17:39:49">9 days ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 " style="line-height: 20px;">
+                <div aria-label="Rated 4.0" title="Very Good" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-7" data-iconr="ù">Rated</div>&nbsp;
+                                We ordered Rumali Roti Masala Papad, Green Apple Mojito, Veg Galouti Kabab, Paneer Tikka Biryani. I must say each of the dish had a very distinct taste.<br />
+Usually Green Apple Mojito is no different from the regular Mojito but here you will get punch of green apple in each sip.<br />
+<br />
+Veg Galouti Kabab was mainly made up of Mushroom, Potato &amp; Paneer. It was very well cooked and super soft to eat. This is must try starter for the vegetarians.<br />
+<br />
+Usually when we talk about Veg Biryani it's more about Pulao but this Zaffran breaks that clutter with very well cooked Biryani along with Paneer Tikka Masala in it.<br />
+<br />
+Overall the food tasted amazing but Zaffran really needs to work on the service. The stewarts need to be more energetic and prompt.<br />
+<br />
+
+                                                <div class="clear"></div>
+            </div>
+
+                        <div class="photosContainer parentPhotoBox mtop0 mbot0 thumbsContainer">
+
+                <div class="ui tiny images">
+
+
+                    <div class="ui image js-heart-container" data-photo_id="u_Q1MjgxODQ5NjM4">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_Q1MjgxODQ5NjM4"
+                           data-index="0">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/ae5/ec5104acf055468e535e9b2c38bc0ae5_1512302998.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_NjQ3NDg5NDkyND">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_NjQ3NDg5NDkyND"
+                           data-index="1">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/096/172f836ff7fe0e256b721d345d0e5096_1512302999.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_0MjUyMTI2NjMxN">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_0MjUyMTI2NjMxN"
+                           data-index="2">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/5e8/49b780cb67005c2ef2980d95d4be25e8_1512303001.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_NjQzMzQ5MDA3OD">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_NjQzMzQ5MDA3OD"
+                           data-index="3">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/1a4/a8a212e42cf2f40eabb0d4fab2e001a4_1512303002.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_Tc0MDA4MjExOTI">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_Tc0MDA4MjExOTI"
+                           data-index="4">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/bfd/16e659547a48edf6c7ee384b293c4bfd_1512303003.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+                                        <div id="restaurant_review_actions_32638374"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32638374"> </div>
+                <div id="restaurant_review_comment_thread_32638374"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[],"fetched_comments_count":0,"fetched_replies_count":0,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":0,"review_id":32638374,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":3,"review_type":"REVIEW","review_user_id":2084240,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":2084240,"user_img_alt":"Utkarsh Mehta","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/a2a\/87d974ff47dd047202c0f092e7284a2a.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Utkarsh Mehta","username":"Seshu En","upvotes":3});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32561344" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/Sweet_Addict">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Ritesh Jaiswal" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/ea1/06bace50a991f0466d78fb8f712f0ea1.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/Sweet_Addict" data-entity_id="1140447" >
+            Ritesh Jaiswal
+          </a>
+
+      </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            76 Reviews
+                                ,
+                          896 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="1140447" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/BqPleY">
+                        <time datetime="2017-11-27 14:32:09">15 days ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 " style="line-height: 20px;">
+                <div aria-label="Rated 3.5" title="Good" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-6" data-iconr="ø">Rated</div>&nbsp;
+                                Good place to go if you are a non-vegetarian. Can't say the same for vegetarians.<br />
+<br />
+Things that we tried<br />
+1. Paya Shorba<br />
+2. Tomato Dhanoa Shorba<br />
+3. Tandoori Broccoli<br />
+4. Kurmuri Methi Palak Kabab<br />
+5. Murgh Malai Tikka<br />
+6. Mutton Galouti Kabab<br />
+7. Paneer Tikka Masala<br />
+8. Kashmiri Dum Aloo<br />
+9.Chilli Cheese Tandoori Roti<br />
+10. Butter Naan<br />
+11. Whole Wheat Lachha Paratha<br />
+12. Cheese Garlic Naan<br />
+<br />
+<br />
+The Good<br />
+1. Rich and tasteful food (mostly true for non-veg)<br />
+2. Good portion<br />
+3. Good ambience<br />
+4. Accessible location<br />
+<br />
+Things that can be improved<br />
+1. Taste of veg food<br />
+2. A little more extensive menu<br />
+3. Desserts (we had a chocolate shake and a caramel custard and both were just okay)<br />
+4. Garlic Cheese Naan should have been cooked better<br />
+<br />
+All in all, if you want a good non-veg meal, go to this place. My non-veg friends told me that they liked the food, especially the Matan Shorba. For veg, I suggest have a look at that menu before going and then make up your mind.
+                                                <div class="clear"></div>
+            </div>
+
+                        <div class="photosContainer parentPhotoBox mtop0 mbot0 thumbsContainer">
+
+                <div class="ui tiny images">
+
+
+                    <div class="ui image js-heart-container" data-photo_id="u_NzYzNzQ2MDI3OD">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_NzYzNzQ2MDI3OD"
+                           data-index="0">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/210/453d4013338627af4692c7a1abb74210_1511773333.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_NDYzMDQ2MDUzNT">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_NDYzMDQ2MDUzNT"
+                           data-index="1">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/777/4f1860f8b0b920e60cd599aff0a94777_1511773335.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_TAzMTM2MjIzNzg">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_TAzMTM2MjIzNzg"
+                           data-index="2">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/10e/8c67787ada96cf91668f49f6dd41910e_1511773336.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_NjcwMDM1NTI3Mz">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_NjcwMDM1NTI3Mz"
+                           data-index="3">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/259/cf07db1945f7ce278e8e3d16867e0259_1511773337.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_0NTA4Njc4OTcwO">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_0NTA4Njc4OTcwO"
+                           data-index="4">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/546/e087c9488c76101536e5f2057d88a546_1511773339.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_NjA3NDQwMjM5OD">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_NjA3NDQwMjM5OD"
+                           data-index="5">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/fe9/514704d92497db325ae830fb4128dfe9_1511773340.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                                        <div class="ui fluid image ">
+                        <a class="grey-text margin0 left" href="https://www.zomato.com/review/BqPleY">
+                            <div class="left-photo-count photo-load-more-small">
+                                <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/fe9/514704d92497db325ae830fb4128dfe9_1511773340.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                                <div class="overlay res-photo-thumbnail tac" data-type="rev" data-photo_id="u_NjA3NDQwMjM5OD">
+                                    <span class="fontsize5">
+                                        +3&nbsp;photos
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+                        <div class="zdark mtop0 mb5">
+                &mdash; with <a data-entity-type ="review" data-entity-id="32561344" href="https://www.zomato.com/RuchAgrawal"><span class="zred">RUCHI AGRAWAL</span></a>
+            </div>
+
+
+                                        <div id="restaurant_review_actions_32561344"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32561344"> </div>
+                <div id="restaurant_review_comment_thread_32561344"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[],"fetched_comments_count":0,"fetched_replies_count":1,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[{"comment_id":3471758,"comment":"Dear Ritesh,\n\nThank you for sharing your feedback and experience. We are delighted to hear that you have enjoyed our cuisine and hospitality. We have taken note of your feedback and have passed it on to our team to provide you with the highest level of culinary experience.\n\nHoping you would give us another chance.\n\nBeat Regards,\nTeam Zaffran","user_id":39975570,"last_edited_timestamp":"2017-11-29 14:39:59","edits_count":0,"admin_removed":0,"active_flag":1,"friendly_time":"13 days ago","comment_user_name":"Zaffran","comment_user_id":39975570,"is_merchant_visible":false}],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":1,"review_id":32561344,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":0,"review_type":"REVIEW","review_user_id":1140447,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":1140447,"user_img_alt":"Ritesh Jaiswal","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/ea1\/06bace50a991f0466d78fb8f712f0ea1.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Ritesh Jaiswal","username":"Seshu En","upvotes":0});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32552578" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/users/dr-antara-30663650">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Dr. Antara" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/ee9/6636da0b339968b710944c7600996ee9.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/users/dr-antara-30663650" data-entity_id="30663650" >
+            Dr. Antara
+          </a>
+
+      </div>
+                <div class="export-label left white ml5">
+          Expert in Lower Parel
+        </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            52 Reviews
+                                ,
+                          92 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="30663650" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/BqPpDd">
+                        <time datetime="2017-11-26 19:52:09">16 days ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 " style="line-height: 20px;">
+                <div aria-label="Rated 4.0" title="Very Good" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-7" data-iconr="ù">Rated</div>&nbsp;
+                                My default place to go to whenever I am in the mood for Indian non veg food!<br />
+<br />
+Love their chicken dishes be it patiala or tikka masala or kadhai! Butter chicken is good but a bit sweet!<br />
+<br />
+Their tokri basket has 7 types of bread including roomali roti, taftaan, butter naan, garlic naan, masala kulcha, garlic kulcha and laccha paratha  👍🏻👍🏻👍🏻👍🏻<br />
+<br />
+Do try their signature dessert cheena payasam!<br />
+<br />
+And hey their chutney is great too .. can I get the recipe ! It always tastes exactly same!
+                                                <div class="clear"></div>
+            </div>
+
+                        <div class="photosContainer parentPhotoBox mtop0 mbot0 thumbsContainer">
+
+                <div class="ui tiny images">
+
+
+                    <div class="ui image js-heart-container" data-photo_id="u_zNTUMjI5NjE2NT">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_zNTUMjI5NjE2NT"
+                           data-index="0">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/ab8/4ead629cf6b39006c175ea9c258fdab8_1511706149.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_M3MDg3Mzk5Mjcw">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_M3MDg3Mzk5Mjcw"
+                           data-index="1">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/7b1/fec7e9736f1a8e5b7555856f0183e7b1_1511706149.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_M0MDc5MzY2NjE0">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_M0MDc5MzY2NjE0"
+                           data-index="2">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/11d/7271e52864ef998bfe7e9f54d37c111d_1511706150.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_Dg2MjQxMjM3MjI">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_Dg2MjQxMjM3MjI"
+                           data-index="3">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/25a/a38dfefa7e17182c943e1318d47db25a_1511706150.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+                                        <div id="restaurant_review_actions_32552578"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32552578"> </div>
+                <div id="restaurant_review_comment_thread_32552578"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[],"fetched_comments_count":0,"fetched_replies_count":0,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":0,"review_id":32552578,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":0,"review_type":"REVIEW","review_user_id":30663650,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":30663650,"user_img_alt":"Dr. Antara","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/ee9\/6636da0b339968b710944c7600996ee9.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Dr. Antara","username":"Seshu En","upvotes":0});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32254804" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/bhukkad_mumbaikar">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Rutuja Solkar" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/bc1/9c4b1a10420edf9b522cf7531a542bc1.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/bhukkad_mumbaikar" data-entity_id="34341257" >
+            Rutuja Solkar
+          </a>
+
+      </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            17 Reviews
+                                ,
+                          66 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="34341257" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/gGbQAG">
+                        <time datetime="2017-11-01 09:59:46">one month ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 hidden " style="line-height: 20px;">
+                <div aria-label="Rated 4.0" title="Very Good" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-7" data-iconr="ù">Rated</div>&nbsp;
+                Zaffran which started off as a small outlet somewhere in the lanes of Crawford has now spread all across Mumbai.We visited the outlet located in Todi mills compound,Lower Parel.<br />
+Menu has the largest selection of North Indian, Mughlai, Biryani, Seafood.The ambience of the place is too good.A dinner could be a perfect option although a lunch maybe exiting too.We visited this place for our Cage fantasy! Zaffran offers lunch or dinner in a cage system for a group of 4 or more people.The cage can be prebooked so you don't miss yourself having food sitting inside it and experiencing a bit of royal feel from the Mughal era!The mughlai food served by them is phenomenal.<br />
+We preferred the Zaffrani Chicken Tikka,The Mutton Galouti kebab as the staters and butter rotis naan with Murg Musallam!<br />
+<span><a class="at-tags at-tags-1178708" href="https://www.zomato.com/That_townie">Suyog Pathare</a></span> <span><a class="at-tags at-tags-38666086" href="https://www.zomato.com/users/anagha-ambre-38666086">Anagha Ambre</a></span>
+                                <div class="clear"></div>
+            </div>
+            <div class="rev-text-sm mbot0">
+                <div tabindex="0" class="rev-text-expand " style="line-height: 20px;">
+                    <div aria-label="Rated 4.0" title="Very Good" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-7" data-iconr="ù">Rated</div>&nbsp;
+                    Zaffran which started off as a small outlet somewhere in the lanes of Crawford has now spread all across Mumbai.We visited the outlet located in Todi mills compound,Lower Parel.<br />
+Menu has the largest selection of North Indian, Mughlai, Biryani, Seafood.The ambience of the place is too good.A dinner could be a perfect option although a lunch maybe exiting too.We visited this place for our Cage fantasy! Zaffran offers lunch or dinner in a cage system for a group of 4 or more people.The cage can be prebooked so you don't miss yourself having food sitting inside it and experiencing a bit of royal feel from the Mughal era!The mughlai food served by them is phenomenal.<br />
+We preferred the Zaffrani Chicken Tikka,The Mutton Galouti kebab as the staters and butter rotis naan with Murg Musallam!<br />
+<span><a class="at-tags at-tags-1178708" href="https://www.zomato.com/That_townie">Suyog Pathare</a></span> <span><a class="at-tags at-tags-38666086" href="https://www.zomato.com/users/anagha-ambre-38666086">Anagha Ambre</a></span>
+                                        <a class="read-more" href="#">read more</a>
+                                        <div class="clear"></div>
+                </div>
+            </div>
+
+
+                        <div class="zdark mtop0 mb5">
+                &mdash; with <a data-entity-type ="review" data-entity-id="32254804" href="https://www.zomato.com/That_townie"><span class="zred">Suyog Pathare</span></a> and <a data-entity-type ="review" data-entity-id="32254804" href="https://www.zomato.com/users/anagha-ambre-38666086"><span class="zred">Anagha Ambre</span></a>
+            </div>
+
+
+                                        <div id="restaurant_review_actions_32254804"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32254804"> </div>
+                <div id="restaurant_review_comment_thread_32254804"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[],"fetched_comments_count":0,"fetched_replies_count":0,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":0,"review_id":32254804,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":1,"review_type":"REVIEW","review_user_id":34341257,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":34341257,"user_img_alt":"Rutuja Solkar","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/bc1\/9c4b1a10420edf9b522cf7531a542bc1.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Rutuja Solkar","username":"Seshu En","upvotes":1});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32167928" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/georgian">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Shekhar Chauhan" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/e6d/4b46ef6e5b2a4e8da9c2125a64cf4e6d.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/georgian" data-entity_id="37683789" >
+            Shekhar Chauhan
+          </a>
+
+      </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            84 Reviews
+                                ,
+                          337 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="37683789" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/NpZDxG">
+                        <time datetime="2017-10-24 20:34:51">one month ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 " style="line-height: 20px;">
+                <div aria-label="Rated 3.5" title="Good" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-6" data-iconr="ø">Rated</div>&nbsp;
+                                The place has enough seating area with decorated cages...  The ambience is good enough to make you feel nostalgic but the taste of food may disappoint you a bit... Even the service may make you feel cry..  Had been to this place twice and both the times experienced the same poor service.. The place is on the little costlier side considering it's service and food..
+                                                <div class="clear"></div>
+            </div>
+
+
+
+
+                                        <div id="restaurant_review_actions_32167928"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32167928"> </div>
+                <div id="restaurant_review_comment_thread_32167928"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[],"fetched_comments_count":0,"fetched_replies_count":1,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[{"comment_id":3358856,"comment":"Dear Shekhar,\n\nThank you for sharing your feedback and experience. We are extremely sorry for the experience and are working on getting ourselves better.\n\nBest Regards,\nTeam Zaffran","user_id":39975570,"last_edited_timestamp":"2017-10-27 12:54:13","edits_count":0,"admin_removed":0,"active_flag":1,"friendly_time":"one month ago","comment_user_name":"Zaffran","comment_user_id":39975570,"is_merchant_visible":false}],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":1,"review_id":32167928,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":0,"review_type":"REVIEW","review_user_id":37683789,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":37683789,"user_img_alt":"Shekhar Chauhan","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/e6d\/4b46ef6e5b2a4e8da9c2125a64cf4e6d.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Shekhar Chauhan","username":"Seshu En","upvotes":0});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32148830" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/DeepFried">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Deep Fried" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/a3a/8462a1e22dcd75ede7880b51b4e41a3a.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/DeepFried" data-entity_id="8617341" >
+            Deep Fried
+          </a>
+
+      </div>
+                <div class="export-label left white ml5">
+          Expert in Lower Parel
+        </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            61 Reviews
+                                ,
+                          645 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="8617341" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/yLXmQG">
+                        <time datetime="2017-10-22 22:16:27">one month ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 hidden " style="line-height: 20px;">
+                <div aria-label="Rated 1.0" title="Poor" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-1" data-iconr="ò">Rated</div>&nbsp;
+                Unfortunately despite high expectations we had a very bad experience to say nonetheless! Everything that could have gone wrong went wrong on 18th Oct when 9 of us office colleagues went to this place to celebrate diwali lunch!<br />
+1. A confirmed reservation was denied! We reserved a table through Zomato a day before and had received confirmation on SMS, e-mail &amp; on Zomato. We didn't bother to book another place as a result of confirmed table. But when we turned up well in time, we were denied the booking. Restaurant reception lady didn't have us listed on the guest list. And her colleague who manages the bookings didn't understand how he confirmed our booking but was not able to find it. We were told to wait. After waiting for 30 mins, we were seated at a table which was only good enough for max 6 people. We anyway adjusted being the understanding ones here.<br />
+2. Food - Whatever we ordered was served COLD! You don't expect that when you pay a hell lot of money for eating at such places! Only thing that was hot and fresh was the last batch of finger bowls! C'mon guys!!<br />
+We had chicken kebab starters and veg starters as well. Though taste was good, serving it cold messed it up big time!<br />
+Butter chicken gravy and afgani chicken gravy tasted same which was a big disappointment.<br />
+3. Staff - Haven't seen such shortage of staff to serve the guests in a well known brand outlet! They were understaffed in a big way on a day they should have expected the max guests on any given day. It came down to a point wherein their bartender started waiting tables! Whoever served us were polite enough but they were hardly to be blamed! Management is thoroughly responsible for such fiasco and 2 other big groups on adjacent tables seemed equally disappointed!<br />
+This place is a strict No No after such experience! There are way better restaurants nearby!<br />
+<span><a class="at-tags at-tags-391265" href="https://www.zomato.com/users/kimberley-pinto-391265">Kimberley Pinto</a></span> <span><a class="at-tags at-tags-446544" href="https://www.zomato.com/users/rahul-nair-446544">Rahul Nair</a></span> <span><a class="at-tags at-tags-250985" href="https://www.zomato.com/users/sunil-rao-250985">Sunil Rao</a></span>
+                                <div class="clear"></div>
+            </div>
+            <div class="rev-text-sm mbot0">
+                <div tabindex="0" class="rev-text-expand " style="line-height: 20px;">
+                    <div aria-label="Rated 1.0" title="Poor" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-1" data-iconr="ò">Rated</div>&nbsp;
+                    Unfortunately despite high expectations we had a very bad experience to say nonetheless! Everything that could have gone wrong went wrong on 18th Oct when 9 of us office colleagues went to this place to celebrate diwali lunch!<br />
+1. A confirmed reservation was denied! We reserved a table through Zomato a day before and had received confirmation on SMS, e-mail & on Zomato. We didn't bother to book another place as a result of confirmed table. But when we turned up well in time, we were denied the booking. Restaurant reception lady didn't have us listed on the guest list. And her colleague who manages the bookings didn't understand how he confirmed our booking but was not able to find it. We were told to wait. After waiting for 30 mins, we were seated at a table which was only good enough for max 6 people. We anyway adjusted being the understanding ones here.<br />
+2. Food - Whatever we ordered was served COLD! You don't expect that when you pay a hell lot of money for...
+                                        <a class="read-more" href="#">read more</a>
+                                        <div class="clear"></div>
+                </div>
+            </div>
+
+                        <div class="photosContainer parentPhotoBox mtop0 mbot0 thumbsContainer">
+
+                <div class="ui tiny images">
+
+
+                    <div class="ui image js-heart-container" data-photo_id="u_M3NzIwOTgyNTkx">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_M3NzIwOTgyNTkx"
+                           data-index="0">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/433/0873d9ecb71452e8f5b236ecb9fbd433_1508690799.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_zcyNjQ3Mjg5MzA">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_zcyNjQ3Mjg5MzA"
+                           data-index="1">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/e63/8f607c2e15d26e293f10cd3857570e63_1508690800.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_zc2MzE2MANjE0M">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_zc2MzE2MANjE0M"
+                           data-index="2">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/a50/e872054a2176ad32f0f73be00bc66a50_1508690801.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+                    <div class="ui image js-heart-container" data-photo_id="u_yMjk1ODkxMTE4N">
+                        <a href="#" class="lazy-inv-image res-photo-thumbnail" data-type="rev" data-photo_id="u_yMjk1ODkxMTE4N"
+                           data-index="3">
+                            <img class="margin0 ui card image lazy" src="https://b.zmtcdn.com/images/photoback.png?output-format=webp"  data-original="https://b.zmtcdn.com/data/reviews_photos/193/f5a45d71f9854d9cb686e47820080193_1508690802.jpg?fit=around%7C160%3A160&amp;crop=160%3A160%3B%2A%2C%2A"   >
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+                        <div class="zdark mtop0 mb5">
+                &mdash; with <a data-entity-type ="review" data-entity-id="32148830" href="https://www.zomato.com/users/rahul-nair-446544"><span class="zred">Rahul Nair</span></a> and <a data-entity-type ="review" data-entity-id="32148830" href="https://www.zomato.com/users/kimberley-pinto-391265"><span class="zred">Kimberley Pinto</span></a>
+            </div>
+
+
+                                        <div id="restaurant_review_actions_32148830"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32148830"> </div>
+                <div id="restaurant_review_comment_thread_32148830"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[{"comment_id":2149609,"comment":"Will never ever visit this pathetic restaurant","user_id":250985,"last_edited_timestamp":"2017-10-22 23:47:58","edits_count":0,"admin_removed":0,"source":"android","reported":0,"comment_db":"Will never ever visit this pathetic restaurant","tagged_struct_array":[],"tagged_struct_array_json":"[]","friendly_time":"one month ago","user_profile_url":"https:\/\/www.zomato.com\/users\/sunil-rao-250985","user_thumb_url":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/909\/80da937b2a6065f07106b1d929f35909.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A","comment_user_name":"Sunil Rao","comment_user_id":250985,"user_verified":0,"user_type":"NORMAL","likes_count":1,"liked_by_user":0},{"comment_id":2161110,"comment":"Unfortunately after reading your review I had a very bad experience to say nonetheless!","user_id":46377700,"last_edited_timestamp":"2017-11-03 12:28:21","edits_count":0,"admin_removed":0,"source":"web","reported":0,"comment_db":"Unfortunately after reading your review I had a very bad experience to say nonetheless!","tagged_struct_array":[],"tagged_struct_array_json":"[]","friendly_time":"one month ago","user_profile_url":"https:\/\/www.zomato.com\/users\/keh-ke-lunga-46377700","user_thumb_url":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/a48\/2334b3aedd76b9b93e84ce38b7619a48.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A","comment_user_name":"Keh Ke Lunga","comment_user_id":46377700,"user_verified":0,"user_type":"NORMAL","likes_count":0,"liked_by_user":0}],"fetched_comments_count":2,"fetched_replies_count":2,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[{"comment_id":3358906,"comment":"Dear Deep Fried,\n\nThank you for sharing your feedback and experience. We are extremely sorry for the experience. We have noted your feedback on the food and the service and are working on getting ourselves better.\n\nHoping you would give us another chance.\n\nBest Regards,\nTeam Zaffran","user_id":39975570,"last_edited_timestamp":"2017-10-27 12:59:23","edits_count":0,"admin_removed":0,"active_flag":1,"friendly_time":"one month ago","comment_user_name":"Zaffran","comment_user_id":39975570,"is_merchant_visible":false},{"comment_id":3386220,"comment":"Typical standard response! so why would you expect us to give Zafran another chance when you haven't even taken pain to provide a real customised response and chose to use a standard template of a response!","user_id":8617341,"last_edited_timestamp":"2017-11-03 13:45:59","edits_count":0,"admin_removed":0,"active_flag":1,"friendly_time":"one month ago","comment_user_name":"Deep Fried","comment_user_id":8617341,"is_merchant_visible":false}],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":4,"review_id":32148830,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":1,"review_type":"REVIEW","review_user_id":8617341,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":8617341,"user_img_alt":"Deep Fried","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/a3a\/8462a1e22dcd75ede7880b51b4e41a3a.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Deep Fried","username":"Seshu En","upvotes":1});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32146666" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/That_townie">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Suyog Pathare" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/92b/7e954ea94bf9bcdc396d0f585ae2392b.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/That_townie" data-entity_id="1178708" >
+            Suyog Pathare
+          </a>
+
+      </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            101 Reviews
+                                ,
+                          96 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="1178708" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/Rpqlno">
+                        <time datetime="2017-10-22 20:03:54">one month ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 " style="line-height: 20px;">
+                <div aria-label="Rated 3.5" title="Good" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-6" data-iconr="ø">Rated</div>&nbsp;
+                                The ambience here is mindblowing. The cages are perfect for groups of 4-5 people. The food quality was really good and so was the portion size. We ordered mutton starters which was really well cooked and soft. <br />
+The staff was good and recommended the right dishes. However, the females from the group found some of the staff members to be creepy.
+                                                <div class="clear"></div>
+            </div>
+
+
+                        <div class="zdark mtop0 mb5">
+                &mdash; with <a data-entity-type ="review" data-entity-id="32146666" href="https://www.zomato.com/bhukkad_mumbaikar"><span class="zred">Rutuja Solkar</span></a> and <a data-entity-type ="review" data-entity-id="32146666" href="https://www.zomato.com/users/rutuja-solkar-35036459"><span class="zred">Rutuja Solkar</span></a>
+            </div>
+
+
+                                        <div id="restaurant_review_actions_32146666"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32146666"> </div>
+                <div id="restaurant_review_comment_thread_32146666"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[{"comment_id":2161112,"comment":"we went 6 of us and had to adjust the 6th one in another cage... just terrible!","user_id":46377700,"last_edited_timestamp":"2017-11-03 12:28:55","edits_count":0,"admin_removed":0,"source":"web","reported":0,"comment_db":"we went 6 of us and had to adjust the 6th one in another cage... just terrible!","tagged_struct_array":[],"tagged_struct_array_json":"[]","friendly_time":"one month ago","user_profile_url":"https:\/\/www.zomato.com\/users\/keh-ke-lunga-46377700","user_thumb_url":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/a48\/2334b3aedd76b9b93e84ce38b7619a48.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A","comment_user_name":"Keh Ke Lunga","comment_user_id":46377700,"user_verified":0,"user_type":"NORMAL","likes_count":0,"liked_by_user":0}],"fetched_comments_count":1,"fetched_replies_count":1,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[{"comment_id":3358922,"comment":"Dear Suyog,\n\nThank you for sharing your feedback and experience. We are delighted to hear that you have enjoyed our cuisine and hospitality.\n\nLooking forward to welcoming you soon.\n\nBest Regards,\nTeam Zaffran","user_id":39975570,"last_edited_timestamp":"2017-10-27 13:01:04","edits_count":0,"admin_removed":0,"active_flag":1,"friendly_time":"one month ago","comment_user_name":"Zaffran","comment_user_id":39975570,"is_merchant_visible":false}],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":2,"review_id":32146666,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":1,"review_type":"REVIEW","review_user_id":1178708,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":1178708,"user_img_alt":"Suyog Pathare","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/92b\/7e954ea94bf9bcdc396d0f585ae2392b.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Suyog Pathare","username":"Seshu En","upvotes":1});</script>
+<div>
+    <div class="  ui segments res-review-body res-review clearfix js-activity-root mbti   item-to-hide-parent stupendousact" data-review_id="32077694" data-snippet="restaurant-review" data-res_id="44008">
+        <div class="ui segment clearfix  brtop ">
+
+            <div class="ui warning message error-message-highlight review-message hidden mbot"></div>
+
+                        <div class="ui item clearfix ">
+                                <div class="item">
+                    <div class="clearfix  mb10 ">
+                        <div class="res-large-snippet ui horizontal list col-s-16  ">
+
+  <div class="item col-s-16">
+    <a href="https://www.zomato.com/avilicious">
+            <img class="ui avatar image left user-pic-lazy tiny" alt="Avila Antao" src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp" data-original="https://b.zmtcdn.com/data/user_profile_pictures/a86/8b476362d1d67221a41a08d37952aa86.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A"/>
+          </a>
+
+
+<!--      -->
+
+    <div class="content col-l-11 large-snippet ml5 mt5">
+
+      <div class="header nowrap ui left">
+                  <a href="https://www.zomato.com/avilicious" data-entity_id="31413941" >
+            Avila Antao
+          </a>
+
+      </div>
+                <div class="export-label left white ml5">
+          Expert in Lower Parel
+        </div>
+                <div class="clear"></div>
+
+      <span class="grey-text fontsize5 nowrap">
+
+
+                                            50 Reviews
+                                ,
+                          142 Followers
+
+              </span>
+        <div class="clear"></div>
+
+                              <div class="zs-follow-btn-container usr-page-follow-btn clear mt2" data-entity-type="USER" data-user-id="31413941" data-is-followed="">
+                <a role="button" aria-label="Follow" class="social-button follow-social cgrey ui basic large label ui-label-bb zs-follow-user-button">
+                  Follow
+                </a>
+            </div>
+
+                      </div>
+
+  </div>
+</div>
+
+                    </div>
+                </div>
+                                <div class="fs12px pbot0 clearfix">
+                    <a class="grey-text" href="https://www.zomato.com/review/wlxBYG">
+                        <time datetime="2017-10-15 23:59:18">one month ago</time>
+                    </a>
+
+
+                </div>
+            </div>
+
+                        <div tabindex="0" class="rev-text mbot0 " style="line-height: 20px;">
+                <div aria-label="Rated 4.0" title="Very Good" class="ttupper fs12px left bold zdhl2 tooltip icon-font-level-7" data-iconr="ù">Rated</div>&nbsp;
+                                The ambience is what gives this place a 4! The lights and seating is all too pretty to miss. The food however is okay. nothing special that you won't find anywhere else. We tried the murg malai and murg tikka . Quantity is less and rates are high. Service is good
+                                                <div class="clear"></div>
+            </div>
+
+
+
+
+                                        <div id="restaurant_review_actions_32077694"> </div>
+
+                    </div>
+
+        <div id="restaurant_review_owner_comment_thread_32077694"> </div>
+                <div id="restaurant_review_comment_thread_32077694"> </div>
+
+    </div>
+</div>
+<script type='application/javascript'>window.Restaurant = window.Restaurant || {};window.Restaurant.lazyLoadActionsData = window.Restaurant.lazyLoadActionsData || [];window.Restaurant.lazyLoadActionsData.push({"blog_approved_flag":0,"blog_displayed_flag":0,"comments":[],"fetched_comments_count":0,"fetched_replies_count":0,"for_dashboard":false,"is_moderator":false,"logged_in":true,"logged_in_user_id":29292506,"logged_in_user_is_owner":false,"logged_in_user_reported":0,"logged_in_user_type":"NORMAL","logged_user_avatar":{"thumb_200":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/355\/69cfc7f47ee038e4a2711da73c529355.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"},"remaining_comments_count":0,"remaining_replies_count":0,"replies":[],"res_img":"https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/38911\/04fe13abcde345e286af72c945f5b048_featured_v2.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","res_url":"https:\/\/www.zomato.com\/mumbai\/zaffran-lower-parel","review_comments_count":0,"review_id":32077694,"review_moderator":0,"review_restaurant_name":"Zaffran","review_thanks_count":0,"review_type":"REVIEW","review_user_id":31413941,"show_report_message":0,"textarea_class":"","use_class":false,"use_textarea_class":false,"user_id":31413941,"user_img_alt":"Avila Antao","user_img_src":"https:\/\/b.zmtcdn.com\/data\/user_profile_pictures\/a86\/8b476362d1d67221a41a08d37952aa86.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A","user_name":"Avila Antao","username":"Seshu En","upvotes":0});</script><script type="text/javascript">zomato.reviews_on_load = false;</script>            </div>
+
+                        <div class="mtop mbot">
+                <div class="ui segment clearfix zs-load-more res-page-load-more" data-entity_id="44008" data-profile_action="reviews-top" data-limit="5" data-page="2">
+                     <div tabindex="0" class="load-more bold ttupper tac cursor-pointer fontsize2">
+                        <span class="zred">Load More&nbsp;</span><span class="zs-load-more-count">32</span>                    </div>
+                </div>
+            </div>
+                                </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+<div class="clear"></div></div>            </div>
+            </div>
+
+    </div>
+
+
+<div class="right-column-container col-l-5">
+        <div class="hide-on-mobile ">
+                            <div class="clearfix">
+                    <div class="res-add-container">
+                                            </div>
+                    <div id="sidebar_google_ad"></div>
+
+
+                </div>
+                <!-- END RES-ADD-CONTAINER -->
+                    </div>
+
+        <div class="grey-text mb5 pr5 new_ads_right_label ad-banner-text-res">
+                        <small class="ads_title_popup ttupper ad-banner-text" style="color: #AB9355;font-size: 10px;font-weight: 500;line-height:20px;" >Sponsored & Popular
+                        </small>
+                    </div><div class="ui inverted popup" id="ads_title_popup">Showing a selection of sponsored listings and popular places</div><div id="cat-banner-ads"></div>
+
+            <div class='barter-banner-ads entity-ads-snippet-track mt10 pt5 pbot' data-banner-id='245' data-banner-type='16'>
+                <a href='https://www.zomato.com/unileverfoodsolutions'>
+                    <img class='w100 brstd' src='https://b.zmtcdn.com/data/special_banners_creatives/27e/d41d8cd98f00b204e9800998ecf8427e.jpg?output-format=webp'>
+                </a>
+            </div>                        <div class="resbox__sidebar display-similar-nearby-res ui segment" data-resId="44008">
+                                <div class="res-info-group hom">
+                    <div class="mb15 bb pbot0">
+                            <h2 tabindex="0" class="fontsize2 semi-bold">Nearby restaurants   </h2>
+                        </div>
+                        <div id="nearby-container" class="section ui cards pbot0"><div class="col-l-16">
+    <div class="w100  bb ">
+        <div class="mtop0 mbot0">
+            <div class="ui list">
+                <div class="item">
+
+                    <div class="right floated top-res-box-rating-small level-6">
+                        3.8
+                    </div>
+
+                                        <a href="https://www.zomato.com/mumbai/chaayos-lower-parel" data-rendered-res-id="18228644" class="left mr10">
+                        <img class="lazy brstd ui mini image" data-original="https://b.zmtcdn.com/data/pictures/chains/9/18140649/8a31c2eff0e1c33d4ba770a7866c421c_featured_v2.jpg?fit=around%7C40%3A40&amp;crop=40%3A40%3B%2A%2C%2A" src ="https://b.zmtcdn.com/images/res_avatar_476_320_1x_new.png?output-format=webp" alt="Chaayos" style= "height:32px;">
+                    </a>
+                    <div class="content">
+                        <div class="header nowrap">
+                            <a href="https://www.zomato.com/mumbai/chaayos-lower-parel" data-rendered-res-id="18228644">Chaayos</a>
+                        </div>
+                        <div class="grey-text nowrap fontsize5">
+                            Lower Parel, Mumbai
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-l-16">
+    <div class="w100  bb ">
+        <div class="mtop0 mbot0">
+            <div class="ui list">
+                <div class="item">
+
+                    <div class="right floated top-res-box-rating-small level-6">
+                        3.7
+                    </div>
+
+                                        <a href="https://www.zomato.com/mumbai/the-super-happy-pop-up-at-the-barking-deer-lower-parel" data-rendered-res-id="44668" class="left mr10">
+                        <img class="lazy brstd ui mini image" data-original="https://b.zmtcdn.com/data/pictures/8/44668/eadb795ff439529ebf1e62b977a13751_featured_v2.jpg?fit=around%7C40%3A40&amp;crop=40%3A40%3B%2A%2C%2A" src ="https://b.zmtcdn.com/images/res_avatar_476_320_1x_new.png?output-format=webp" alt="The Super Happy Pop-Up At The Barking Deer" style= "height:32px;">
+                    </a>
+                    <div class="content">
+                        <div class="header nowrap">
+                            <a href="https://www.zomato.com/mumbai/the-super-happy-pop-up-at-the-barking-deer-lower-parel" data-rendered-res-id="44668">The Super Happy Pop-Up At The Barking Deer</a>
+                        </div>
+                        <div class="grey-text nowrap fontsize5">
+                            Lower Parel, Mumbai
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-l-16">
+    <div class="w100  bb ">
+        <div class="mtop0 mbot0">
+            <div class="ui list">
+                <div class="item">
+
+                    <div class="right floated top-res-box-rating-small level-6">
+                        3.9
+                    </div>
+
+                                        <a href="https://www.zomato.com/mumbai/theobroma-lower-parel" data-rendered-res-id="18374843" class="left mr10">
+                        <img class="lazy brstd ui mini image" data-original="https://b.zmtcdn.com/data/pictures/chains/7/34407/b3f8c3d9b0c2357dd7c893a499a920eb_featured_v2.jpg?fit=around%7C40%3A40&amp;crop=40%3A40%3B%2A%2C%2A" src ="https://b.zmtcdn.com/images/res_avatar_476_320_1x_new.png?output-format=webp" alt="Theobroma" style= "height:32px;">
+                    </a>
+                    <div class="content">
+                        <div class="header nowrap">
+                            <a href="https://www.zomato.com/mumbai/theobroma-lower-parel" data-rendered-res-id="18374843">Theobroma</a>
+                        </div>
+                        <div class="grey-text nowrap fontsize5">
+                            Lower Parel, Mumbai
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-l-16">
+    <div class="w100 ">
+        <div class="mtop0 mbot0">
+            <div class="ui list">
+                <div class="item">
+
+                    <div class="right floated top-res-box-rating-small level-new" style="width: auto; padding: 0px 2px;">
+                        NEW
+                    </div>
+
+                                        <a href="https://www.zomato.com/mumbai/toit-brewery-taproom-kitchen-lower-parel" data-rendered-res-id="18537823" class="left mr10">
+                        <img class="lazy brstd ui mini image" data-original="https://b.zmtcdn.com/data/pictures/3/18537823/e2f652aecb47a775a4eb83eded274de7_featured_v2.jpg?fit=around%7C40%3A40&amp;crop=40%3A40%3B%2A%2C%2A" src ="https://b.zmtcdn.com/images/res_avatar_476_320_1x_new.png?output-format=webp" alt="Toit Brewery - Taproom & Kitchen" style= "height:32px;">
+                    </a>
+                    <div class="content">
+                        <div class="header nowrap">
+                            <a href="https://www.zomato.com/mumbai/toit-brewery-taproom-kitchen-lower-parel" data-rendered-res-id="18537823">Toit Brewery - Taproom & Kitchen</a>
+                        </div>
+                        <div class="grey-text nowrap fontsize5">
+                            Lower Parel, Mumbai
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>                </div>
+                <script>
+                            var tdata = tdata || {};
+                            tdata["restaurants_shown"] = "|18228644,44668,18374843,18537823";
+                        </script>            </div>
+
+            <div class='clearfix ui segment sidebar-app-banner '></div>
+                    <div class="hom mtop mbot">
+                         <a class="ui fluid button red home-button" href="https://www.zomato.com/business/widgets/44008">Get Restaurant Widget</a>
+                    </div><div class="ui segment hom"><div class="ui header" role="heading" tabindex="0" aria-label="Are you a food blogger?">Are you a food blogger?</div>
+                        <a class="zred" href="https://www.zomato.com/spoonbacks/44008">Add a Zomato spoonback to your blog. &rsaquo;
+                        </a>
+                    </div>            </div>
+
+</div>
+</div>
+
+    <div class="wrapper">
+        <div class="ui divider"></div>
+        <div class="res-related-searches ipadding others pbot">
+
+            <section class="pbot0 section clearfix">
+                                <h2 tabindex="0" aria-label="Related to Zaffran, Lower Parel" class="fontsize3 mbot0 normal">Related to Zaffran, Lower Parel</h2>
+                <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai" title="Mumbai Restaurants">Restaurants in Mumbai, Mumbai Restaurants</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/lower-parel-restaurants" title="Lower Parel restaurants">Lower Parel restaurants</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/best-lower-parel-restaurants" title="Best Lower Parel restaurants">Best Lower Parel restaurants</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/south-mumbai-restaurants" title="South Mumbai restaurants">South Mumbai restaurants</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/casual-dining" title="Casual Dining in Mumbai">Casual Dining in Mumbai</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/casual-dining-near-me" title="Casual Dining near me">Casual Dining near me</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/south-mumbai-restaurants/casual-dining"  title="Casual Dining in South Mumbai">Casual Dining in South Mumbai</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/lower-parel-restaurants/casual-dining" title="Casual Dining in Lower Parel">Casual Dining in Lower Parel</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/zaffran-lower-parel/menu">Zaffran Menu</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/lower-parel-order-online" title="Order food online in Lower Parel">Order food online in Lower Parel</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/order-food-online" title="Order food online in Mumbai">Order food online in Mumbai</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/south-mumbai-order-online" title="Order food online in South Mumbai">Order food online in South Mumbai</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/newyear" title="New Year Parties in Mumbai">New Year Parties in Mumbai</a><span class="grey-text">,</span> <a class="related-links-link grey-text hu" href="https://www.zomato.com/mumbai/christmas" title="New Year Parties in Mumbai">Christmas' Special in Mumbai</a>
+            </section>
+
+                                            <section class="section normal pbot0 pt5 pbot0 mtop0 clearfix">
+                    <h4 tabindex="0" aria-label="Restaurants around Lower Parel" class="normal fontsize3 mbo0">Restaurants around Lower Parel</h4>
+                    <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/worli-restaurants" title="List of Worli restaurants">Worli restaurants</a><span class="grey-text">,</span> <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/dadar-east-restaurants" title="List of Dadar East restaurants">Dadar East restaurants</a><span class="grey-text">,</span> <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/prabhadevi-restaurants" title="List of Prabhadevi restaurants">Prabhadevi restaurants</a><span class="grey-text">,</span> <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/parel-restaurants" title="List of Parel restaurants">Parel restaurants</a>                </section>
+
+
+            <section class="pbot0 pt5 section mtop0 clearfix">
+                                    <h4 tabindex="0" aria-label="Frequent searches leading to this page" class="normal fontsize3 mbot0">Frequent searches leading to this page</h4>
+                    <div class="userKeywords">
+                        <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/zaffran-lower-parel">1</a><span class="grey-text">,</span> <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/zaffran-lower-parel">zaffran lower parel menu</a><span class="grey-text">,</span> <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/zaffran-lower-parel">zaffran menu</a><span class="grey-text">,</span> <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/zaffran-lower-parel">zaffran</a><span class="grey-text">,</span> <a class="hu related-links-link grey-text" href="https://www.zomato.com/mumbai/zaffran-lower-parel">zaffran lower parel</a>                    </div>
+                            </section>
+
+                                </div>
+    </div>
+
+</html>
